@@ -1,9 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import '../globals.css';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Home">
+	<header>
+		<Navbar/>
+	</header>
 	<main>
 		<svg
 			class="astro-a"
