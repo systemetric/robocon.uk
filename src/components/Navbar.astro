@@ -2,7 +2,7 @@
 import "@/globals.css";
 import RCLogo from "@/components/RoboConLogo.astro"
 ---
-<div>
+<div class="navbar">
     <RCLogo/>
     <a href="/sponsor">Sponsor</a>
     <a href="/compete">Compete</a>
@@ -11,6 +11,12 @@ import RCLogo from "@/components/RoboConLogo.astro"
     <a href="/about-us">About Us</a>
 </div>
 <style>
+    .navbar {
+        display:block;
+        padding:0.5rem;
+        height:3rem;
+    }
+
     a {
         text-decoration: none;
         font-family: "Courier New", Courier, monospace;
@@ -19,7 +25,7 @@ import RCLogo from "@/components/RoboConLogo.astro"
         display: block;
         color: black;
         text-align: center;
-        padding: 20px;
+        margin: 0.5rem;
         text-decoration: none;
     }
 
