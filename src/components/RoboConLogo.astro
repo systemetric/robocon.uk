@@ -1,0 +1,21 @@
+---
+import "@/globals.css"
+interface Props {
+    clickable?: boolean;
+    href?:string;
+}
+let { clickable = true, href="/" } = Astro.props
+---
+<a href={clickable ? href : ""} class="logo" >
+    ROBOCON
+</a>
+<style>
+    .logo {
+        font-family: "FugazOne";
+        font-size: 2em;
+        color: var(--rc-red);
+        padding: 20px;
+        text-decoration: none;
+        cursor: {clickable ? "auto" : "default"};
+    }
+</style>
