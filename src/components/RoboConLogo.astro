@@ -11,11 +11,12 @@ let { clickable = true, href="/" } = Astro.props
 </a>
 <style>
     .logo {
+        float:left;
         font-family: "FugazOne";
         font-size: 2em;
         color: var(--rc-red);
-        padding: 20px;
         text-decoration: none;
+        text-shadow: -0.05em 0.05em black;
         cursor: {clickable ? "auto" : "default"};
     }
 </style>
