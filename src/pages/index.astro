@@ -1,14 +1,15 @@
 ---
+import '@/globals.css';
 import Layout from '@/layouts/Layout.astro';
 import Navbar from '@/components/Navbar.astro';
-import '@/globals.css';
+import HomepageCarousel from '@/components/HomepageCarousel.svelte';
 ---
 
 <Layout title="Home">
-	<header>
+	<header class="sticky top-0 z-50">
 		<Navbar/>
 	</header>
-	<main>
-
+	<main class="h-screen">
+		<HomepageCarousel client:load/>
 	</main>
 </Layout>
