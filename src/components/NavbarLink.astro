@@ -1,0 +1,8 @@
+---
+import "@/globals.css"
+interface Props {
+    to: string;
+}
+let {to} = Astro.props;
+---
+<a href={to} class="mx-3 float-right font-mono hover:underline my-auto"><slot /></a>

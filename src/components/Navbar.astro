@@ -1,43 +1,15 @@
 ---
 import "@/globals.css";
+import RCLogo from "@/components/RoboConLogo.astro"
+import NavbarLink from "./NavbarLink.astro";
 ---
-<ul>
-    <a href="/" class="title">ROBOCON</a>
-    <li><a href="/sponsor">Sponsor</a></li>
-    <li><a href="/compete">Compete</a></li>
-    <li><a href="/docs">Docs</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/about-us">About Us</a></li>
-</ul>
-<style>
-    a {
-        text-decoration: none;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333333;
-    }
-    h2 {
-        float: left;
-    }
-    li a {
-        font-family: "Courier New", Courier, monospace;
-        font-weight: 800;
-        float: right;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        text-decoration: none;
-    }
-    .title {
-        float: left;
-        font-family: "FugazOne";
-        font-size: medium;
-        color: red;
-        padding: 20px;
-    }
-</style>
+<div class="navbar bg-white p-2 h-12">
+    <RCLogo/>
+    <div class="flex float-end items-center h-full">
+        <NavbarLink to="/about">About Us</NavbarLink>
+        <NavbarLink to="/blog">Blog</NavbarLink>
+        <NavbarLink to="/docs">Docs</NavbarLink>
+        <NavbarLink to="/compete">Compete</NavbarLink>
+        <NavbarLink to="/sponsor">Sponsor</NavbarLink>
+    </div>
+</div>
