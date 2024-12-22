@@ -1,9 +1,11 @@
 <script lang="ts">
     import * as Carousel from "@/components/ui/carousel/index.ts";
     import { type CarouselAPI } from "@/components/ui/carousel/context.js";
+    import Autoplay from "embla-carousel-autoplay";
     import { Button } from "@/components/ui/button";
     import HomepageCarouselItem from "@/components/HomepageCarouselItem.svelte";
     interface Props {
+        speed: number;
         slides: {
             image: {
                 path: string;
@@ -15,7 +17,7 @@
             actionTo: string;
         }[];
     }
-    let { slides }: Props = $props();
+    let { slides, speed }: Props = $props();
 
     let currentSlide: number = $state(0); // TODO: make check for actual value here. Could break if not starting at 0
 
@@ -37,6 +39,11 @@
     opts={{
         loop: true,
     }}
+    plugins={[
+        Autoplay({
+          delay: speed,
+        }),
+      ]}
     class="w-full h-fit"
     bind:api
 >
