@@ -10,6 +10,16 @@ import HomepageCarousel from '@/components/HomepageCarousel.svelte';
 		<Navbar/>
 	</header>
 	<main class="h-screen">
-		<HomepageCarousel client:load/>
+		<HomepageCarousel client:load slides={[
+			{
+				title:"Lorem Ipsum",
+				image:{
+					path:"/images/IMG_7815.JPG",
+				},
+				text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
+				actionLabel:"Click",
+				actionTo:"/"
+			}
+		]}/>
 	</main>
 </Layout>
