@@ -1,6 +1,5 @@
 <script lang="ts">
     import * as Carousel from "@/components/ui/carousel";
-    import type { Snippet } from "svelte";
     interface Props {
         src: string;
         alt?: string;

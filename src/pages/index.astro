@@ -10,7 +10,7 @@ import HomepageCarousel from '@/components/HomepageCarousel.svelte';
 		<Navbar/>
 	</header>
 	<main class="h-screen">
-		<HomepageCarousel client:load slides={[
+		<HomepageCarousel client:load speed={10000} slides={[
 			{
 				title:"Lorem Ipsum",
 				image:{
@@ -21,7 +21,7 @@ import HomepageCarousel from '@/components/HomepageCarousel.svelte';
 				actionTo:"/"
 			},
 			{
-				title:"2 Lorem Ipsum",
+				title:"2 Lorem 2 Ipsum",
 				image:{
 					path:"/images/IMG_7294.JPG",
 				},
@@ -30,7 +30,7 @@ import HomepageCarousel from '@/components/HomepageCarousel.svelte';
 				actionTo:"/"
 			},
 			{
-				title:"3 Lorem Ipsum",
+				title:"Lorem Ipsum 3: Revenge of the if()",
 				image:{
 					path:"/images/IMG_7311.JPG",
 				},
