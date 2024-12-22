@@ -5,7 +5,8 @@ import NavbarLink from "./NavbarLink.astro";
 ---
 <div class="navbar bg-white p-2 h-12 shadow-md">
     <RCLogo/>
-    <div class="flex float-end items-center h-full">
+    <div class="md:flex float-end items-center h-full hidden"> 
+        <!-- NOTE these being hidden on small aspect rations is a dev fix to stop them messing with other layout. should fix in future. -->
         <NavbarLink to="/about">About Us</NavbarLink>
         <NavbarLink to="/blog">Blog</NavbarLink>
         <NavbarLink to="/docs">Docs</NavbarLink>
