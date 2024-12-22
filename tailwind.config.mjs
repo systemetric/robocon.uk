@@ -57,7 +57,7 @@ const config = {
 			fontFamily: {
 				sans: [...fontFamily.sans],
 				display:["Rubik Mono One", ...fontFamily.sans],
-
+				mono:["Overpass Mono","mono"]
 			}
 		}
 	},
