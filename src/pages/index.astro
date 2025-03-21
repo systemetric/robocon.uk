@@ -1,15 +1,11 @@
 ---
 import "@/globals.css";
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
-import Navbar from "@/components/Navbar.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
 import { Button } from "@/components/ui/button";
 ---
 
 <Layout title="Home">
-	<header class="sticky top-0 z-50">
-		<Navbar />
-	</header>
 	<main class="h-auto">
 		<HomepageCarousel
 			client:load

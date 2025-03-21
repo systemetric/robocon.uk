@@ -1,7 +1,7 @@
 ---
 import Layout from "./Layout.astro";
 import Navbar from "@/components/Navbar.astro";
-import FooterLink from "@/components/FooterLink.astro";
+import Footer from "@/components/Footer.astro";
 
 interface Props {
     title: string;
@@ -13,22 +13,9 @@ interface Props {
         <Navbar />
     </header>
     <main>
-        <slot />
+        <slot/>
     </main>
     <footer class="flex bg-gray-800 w-full text-white flex-col items-center p-2">
-        <div class="flex w-full items-start justify-evenly m-2">
-            <div>
-                <!-- Logo, etc here? -->
-            </div>
-            <div>
-                <h1>Pages</h1>
-                <FooterLink href="">Test</FooterLink>
-                <FooterLink href="">Test</FooterLink>
-            </div>
-            <div>
-                <!-- More pages? -->
-            </div>
-        </div>
-        <div class="m-2">© Hills Road Sixth Form College 2025</div>
+        <Footer></Footer>
     </footer>
 </Layout>

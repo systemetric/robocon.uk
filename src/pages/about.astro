@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/RCHeaderFooterLayout.astro";
+import '@/globals.css';
+import { Button } from "@/components/ui/button";
+---
+
+<Layout title="About Us">
+	<main class="min-h-lvh w-[100%]">
+		<img src="/images/IMG_7360.JPG" class="h-[400px] w-full object-cover"/></div>
+        <h1 class="m-4 font-display text-4xl text-center">About RoboCon</h1>
+		<div class="p-8 flex items-center content-around">
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/IMG_7360.JPG" class="-right-4"/>
+			</div>
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<h1 class="font-display text-xl m-4">What's RoboCon?</h1>
+				<p class="font-sans max-w-[60ch]">RoboCon is a robot competition offered to secondary schools, run by Hills Road students. We provide everything you need, including the kit and 1:1 support for your students!</p>
+				<p class="font-bold">We provide everything, all you need is a teacher!</p>
+				<Button variant="outline" class="m-4">Action Here</Button>
+			</div>
+		</div>
+		<div class="p-8 flex items-center content-around">
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<h1 class="font-display text-xl m-4">Who are we?</h1>
+				<div class="font-sans max-w-[60ch]">RoboCon is run by a friendly team of Hills Road students, with the backing of our excellent staff and alumni mentors. We not only manage the running of this competition, but also build our own robots to compete in <a class="underline text-blue-500" href="https://studentrobotics.org/" target="_blank">Student Robotics</a> (think a bigger version of RoboCon!).</div>
+				<Button variant="outline" class="m-4">Action Here</Button>
+			</div>
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/IMG_7360.JPG" class="-left-4"/>
+			</div>
+		</div>
+	</main>
+</Layout>
