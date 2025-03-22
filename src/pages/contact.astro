@@ -1,26 +1,19 @@
 ---
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import '@/globals.css';
+import Card from "@/components/ui/Card.astro";
 ---
 
 <Layout title="Contact Us">
-	<main class="min-h-lvh w-[100%]">
+	<main class="min-h-auto w-[100%]">
 		<img src="/images/IMG_7360.JPG" class="h-[400px] w-full object-cover"/></div>
         <h1 class="m-4 font-display text-4xl text-center">So email us... Maybe?</h1>
         <p class="text-center">Reach out to our friendly team of students, we can't wait to say hello!</p>
 		
-        <div class="grid grid-cols-3 md:grid-cols-3 gap-4 w-[100%] p-8">
-            <div class="items-center h-auto">
-                <h1>TEXT</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis et, dignissimos ipsa maxime, nesciunt nobis deserunt minima voluptatibus, possimus autem repellat! Nulla, aspernatur nobis et adipisci modi odio exercitationem corrupti!</p>
-            </div>
-            <div class="items-center h-auto">
-                <h1>TEXT</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis et, dignissimos ipsa maxime, nesciunt nobis deserunt minima voluptatibus, possimus autem repellat! Nulla, aspernatur nobis et adipisci modi odio exercitationem corrupti!</p>
-            </div><div class="items-center h-auto">
-                <h1>TEXT</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis et, dignissimos ipsa maxime, nesciunt nobis deserunt minima voluptatibus, possimus autem repellat! Nulla, aspernatur nobis et adipisci modi odio exercitationem corrupti!</p>
-            </div>
+        <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-3 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
+            <Card title="Email" description="Send us any questions or queries, we're happy to help!" href="mailto:robotics@hrsfc.ac.uk" linkText="Email Us" backgroundColour="red"/>
+            <Card title="Video Call" description="Arrange a free 1:1 video call with our student mentors for help building your robot" href="mailto:robotics@hrsfc.ac.uk?subject=Arrange%20a%20Video%20Call&body=Dear%20robotics%2C%0A%0AWe%20%5Byour%20team%5D%20would%20like%20to%20arrange%20a%20video%20call%20with%20your%20student%20mentors.%0A%5BDescribe%20your%20problem%5D" linkText="Arrange Now" backgroundColour="blue"/>
+            <Card title="Visit" description="Come and visit us at Hills Road (prior booking required) for 1:1 help with your robot. These sessions are available (almost) every Saturday 10-4 up to the competition. Find out if we're around by email first!" href="mailto:robotics@hrsfc.ac.uk" linkText="Book Now" backgroundColour="green"/>
         </div>
 	</main>
 </Layout>
