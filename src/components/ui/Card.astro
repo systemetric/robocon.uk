@@ -1,0 +1,22 @@
+---
+import "@/globals.css";
+import Button from "@/components/ui/button/button.svelte";
+
+interface Props {
+    title: string;
+    description: string;
+    href: string;
+    linkText: string;
+    backgroundColour: string;
+}
+var {title, description, href, linkText, backgroundColour} = Astro.props;
+if (backgroundColour == null) {
+    backgroundColour = "red";
+}
+const classList = "h-8 mt-2 text-lg p-5 font-mono font-semibold w-[100%] bg-" + backgroundColour + "-500 hover:bg-" + backgroundColour + "-600";
+---
+<div class="items-center h-auto border rounded-md shadow-md p-4">
+    <h1 class="font-display text-xl m-4 text-center">{title}</h1>
+    <p>{description}</p>
+    <Button class={classList} href={href}>{linkText}</Button>
+</div>
