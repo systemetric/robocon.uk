@@ -1,0 +1,21 @@
+---
+import Layout from "./Layout.astro";
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+import NewsReel from "@/components/NewsReel.astro";
+
+const { frontmatter } = Astro.props;
+---
+<Layout title={frontmatter.title + " - RoboCon"}>
+  <header class="sticky top-0 z-50">
+    <Navbar />
+  </header>
+  <main>
+    <h1 class="text-4xl font-bold text-center my-4">{frontmatter.title}</h1>
+    <slot />
+    <NewsReel />
+  </main>
+  <footer class="flex bg-gray-800 w-full text-white flex-col items-center p-2">
+    <Footer />
+  </footer>
+</Layout>

@@ -1,0 +1,28 @@
+---
+import NewsCard from '@/components/ui/NewsCard.astro';
+import Layout from '../layouts/RCHeaderFooterLayout.astro'
+const allPosts = Object.values(import.meta.glob('./news/*.md', { eager: true }));
+allPosts.sort((a: any, b: any) => new Date(b.frontmatter.lastUpdated).getTime() - new Date(a.frontmatter.lastUpdated).getTime());
+
+---
+
+<Layout title="RoboCon News">
+	<main class="min-h-lvh w-[100%]">
+        <h1 class="text-display text-4xl font-bold text-center my-4">RoboCon News</h1>
+		<p class="text-center">Hot off the press! The latest news from RoboCon.</p>
+        <div class="m-4 p-4 float-root">
+            {allPosts.map((post: any) => 
+                <div class="max-w-[800px] float-left m-4">
+                    <NewsCard
+                        image={post.frontmatter.image.url}
+                        title={post.frontmatter.title}
+                        description={post.frontmatter.description}
+                        lastUpdated={post.frontmatter.lastUpdated}
+                        href={post.url}
+                        linkText="Read More...">
+                    </NewsCard>
+                </div>
+            )}
+        </div>
+	</main>
+</Layout>

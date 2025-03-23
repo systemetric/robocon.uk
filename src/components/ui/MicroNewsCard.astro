@@ -1,0 +1,26 @@
+---
+import "@/globals.css";
+import Button from "@/components/ui/button/button.svelte";
+
+interface Props {
+    image: string;
+    title: string;
+    description: string;
+    lastUpdated: string;
+    href: string;
+    linkText: string;
+}
+
+let {title, description, href, linkText, image, lastUpdated} = Astro.props;
+let updatedDate = new Date(lastUpdated);
+let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<div class="items-center h-auto border rounded-md shadow-md p-4 hover:scale-105  duration-200 flex flex-col justify-between bg-white">
+    <div class="overflow-hidden w-[100%] pr-1">
+        <img src={image}/>
+    </div>
+    <h1 class="font-display text-xl m-4">{title}</h1>
+    <p class="font-sans max-w-[60ch]">{description}</p>
+    <Button class="h-8 mt-2 text-lg p-5 font-mono font-semibold pr-4 w-full" href={href}>{linkText}</Button>
+    <p class="text-slate-600 text-sm italic mt-[5px]">{"Last updated: "+lastUpdatedStr}</p>
+</div>
