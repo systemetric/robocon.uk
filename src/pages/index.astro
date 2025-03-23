@@ -3,6 +3,7 @@ import "@/globals.css";
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
 import { Button } from "@/components/ui/button";
+import NewsReel from "@/components/NewsReel.astro";
 ---
 
 <Layout title="Home">
@@ -50,8 +51,6 @@ import { Button } from "@/components/ui/button";
 				<Button variant="outline" class="m-4">Action Here</Button>
 			</div>
 		</div>
-		<div class="p-8 w-full bg-gray-300">
-			
-		</div>
+		<NewsReel />
 	</main>
 </Layout>

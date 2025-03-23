@@ -100,3 +100,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+a {
+  color: red;
+  font-family: 'Overpass Mono';
+  text-decoration: underline;
+}

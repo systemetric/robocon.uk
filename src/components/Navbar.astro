@@ -2,15 +2,17 @@
 import "@/globals.css";
 import RCLogo from "@/components/RoboConLogo.astro"
 import NavbarLink from "./NavbarLink.astro";
+import Button from "@/components/ui/button/button.svelte";
 ---
 <div class="navbar bg-white p-2 h-12 shadow-md">
     <RCLogo/>
     <div class="md:flex float-end items-center h-full hidden"> 
         <!-- NOTE these being hidden on small aspect rations is a dev fix to stop them messing with other layout. should fix in future. -->
         <NavbarLink to="/about">About Us</NavbarLink>
-        <NavbarLink to="/blog">Blog</NavbarLink>
+        <NavbarLink to="/news">News</NavbarLink>
         <NavbarLink to="https://docs.robocon.uk">Docs</NavbarLink>
         <NavbarLink to="/compete">Compete</NavbarLink>
         <NavbarLink to="/sponsor">Sponsor</NavbarLink>
+        <Button class="text-sm font-mono font-semibold" href="/contact">Get In Touch</Button>
     </div>
 </div>
