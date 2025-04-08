@@ -8,7 +8,7 @@ lastUpdated: 2024-11-02T16:00:00.000Z
 description: Today we launched RoboCon 2025 with our fiery new competition!
 layout: ../../layouts/NewsLayout.astro
 ---
-Today we welcomed 15 teams from 10 schools at our kickoff event for RoboCon 2025.
+Today we welcomed 15 teams from 10 schools at our kickoff event for RoboCon 2025.  
 
 The day started with a presentation from three of our students about this year's competition 'Dragon's Lair'. Read the full backstory about the competition on page 2 of the [rulebook](/rulebook-2025.pdf)!
 

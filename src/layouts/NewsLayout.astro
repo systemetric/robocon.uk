@@ -5,14 +5,20 @@ import Footer from "@/components/Footer.astro";
 import NewsReel from "@/components/NewsReel.astro";
 
 const { frontmatter } = Astro.props;
+let updatedDate = new Date(frontmatter.lastUpdated);
+let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 <Layout title={frontmatter.title + " - RoboCon"}>
   <header class="sticky top-0 z-50">
     <Navbar />
   </header>
   <main>
-    <h1 class="text-4xl font-bold text-center my-4">{frontmatter.title}</h1>
-    <slot />
+    <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="h-[400px] w-full object-cover"/>
+    <div class="max-w-[800px] m-auto">
+      <h1 class="text-4xl font-bold text-center my-4">{frontmatter.title}</h1>
+      <p class="text-slate-600 text-sm italic mt-[5px] text-left">{"Last updated: "+lastUpdatedStr}</p>
+      <slot />
+    </div>
     <NewsReel />
   </main>
   <footer class="flex bg-gray-800 w-full text-white flex-col items-center p-2">
