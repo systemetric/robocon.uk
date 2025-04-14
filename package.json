@@ -8,7 +8,8 @@
     "start-lan": "astro dev --host",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "images:compress": "node ./.build/imageCompressor.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -21,10 +22,14 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "bits-ui": "^0.21.16",
     "clsx": "^2.1.1",
     "embla-carousel-svelte": "^8.5.1",
+    "guage": "^0.0.0",
     "lucide-svelte": "^0.462.0",
+    "mkdirp": "^0.5.1",
+    "sharp": "^0.26.0",
     "tailwind-merge": "^2.5.5",
     "tailwind-variants": "^0.3.0"
   }
