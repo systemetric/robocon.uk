@@ -1,7 +1,7 @@
 ---
 title: The Result of RoboCon 2019!
 image: 
-  url: /images/img_5774.jpg
+  url: /images/news/Review2019/img_5774.jpg
   alt: unknown
 lastUpdated: '2019-06-19 09:29:30'
 description: >-
@@ -11,7 +11,7 @@ layout: ../../layouts/NewsLayout.astro
 ---
 # Comberton Village College wins RoboCon 2019!
 
-![](/images/img_5774.jpg)
+![](/images/news/Review2019/img_5774.jpg)
 
 After a months of work by the teams on their robots the RoboCon teams competed. They worked tirelessly over the weekend to improve their robots and adapt to new challenges. It was a great success and everyone got something out of it however it is a competition and so there have to be victors. 
 

@@ -20,7 +20,7 @@ let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', 
       <a href="/news">&lt;- All News</a>
       <p class="text-slate-600 text-sm italic mt-[5px] text-left float-right">{"Last updated: "+lastUpdatedStr}</p>
       <div
-        class="prose prose-newsMarkdown">
+        class="prose prose-newsMarkdown mb-4">
         <slot />
       </div>
     </div>
