@@ -8,7 +8,7 @@ allPosts.sort((a: any, b: any) => new Date(b.frontmatter.lastUpdated).getTime() 
 
 <Layout title="RoboCon News">
 	<main class="min-h-lvh w-[100%]">
-        <h1 class="text-display text-4xl font-bold text-center my-4">RoboCon News</h1>
+        <h1 class="font-display text-4xl font-bold text-center my-4">RoboCon News</h1>
 		<p class="text-center">Hot off the press! The latest news from RoboCon.</p>
         <div class="p-4 m-auto grid sm:grid-cols-1 xl:grid-cols-2 gap-4 w-[100%] justify-center">
             {allPosts.map((post: any) => 
