@@ -1,4 +1,5 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
+import typography from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -59,8 +60,30 @@ const config = {
 				display:["Rubik Mono One", ...fontFamily.sans],
 				mono:["Overpass Mono","mono"]
 			}
-		}
+		},
+		typography: (theme) => ({
+			newsMarkdown: {
+			  	css: {
+					h1: {
+						fontFamily: theme('fontFamily.display').join(', '),
+						fontSize: theme('fontSize.4xl'),
+						marginTop: '1rem',
+					},
+					h2: {
+						fontFamily: theme('fontFamily.display').join(', '),
+						fontSize: theme('fontSize.2xl'),
+						marginTop: '1rem',
+					},
+					p: {
+						marginTop: '1rem',
+					}
+			  	},
+			},
+		}),
 	},
+	plugins: [
+		typography, // Add the typography plugin
+	],
 };
 
 export default config;
