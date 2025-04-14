@@ -8,7 +8,7 @@ const top3 = allPosts.slice(0, 3);
 ---
 <div class="bg-slate-300 p-4">
     <h1 class="font-display text-4xl font-bold text-center my-4">Latest Updates</h1>
-    <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-3 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
+    <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
         {top3.map((post: any) => 
             <MicroNewsCard
                 image={post.frontmatter.image.url}

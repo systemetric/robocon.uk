@@ -1,7 +1,7 @@
 ---
 title: RoboCon 2024 kick-off
 image: 
-    url: /images/img_7025.jpg
+    url: /images/news/Kickoff2024/Kickoff2024.jpeg
     alt: Happy people
 
 lastUpdated: 2023-10-28T16:32:49.482Z

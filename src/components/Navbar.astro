@@ -3,10 +3,20 @@ import "@/globals.css";
 import RCLogo from "@/components/RoboConLogo.astro"
 import NavbarLink from "./NavbarLink.astro";
 import Button from "@/components/ui/button/button.svelte";
+
+// TODO: Fix when resizing window from mobile to desktop (while hamburger menu closed), the navbar disappears!
 ---
-<div class="navbar bg-white p-2 h-12 shadow-md">
+<div class="navbar bg-white p-2 md:h-12 h-auto shadow-md">
     <RCLogo/>
-    <div class="md:flex float-end items-center h-full hidden"> 
+
+    <div id="hamburger" class="flex float-end items-center h-full md:hidden cursor-pointer">
+        <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+        </svg>
+    </div>
+    <div id="navbar" class="md:flex md:float-end items-center h-full hidden"> 
         <!-- NOTE these being hidden on small aspect rations is a dev fix to stop them messing with other layout. should fix in future. -->
         <NavbarLink to="/about">About Us</NavbarLink>
         <NavbarLink to="/news">News</NavbarLink>
@@ -16,3 +26,21 @@ import Button from "@/components/ui/button/button.svelte";
         <Button class="text-sm font-mono font-semibold" href="/contact">Get In Touch</Button>
     </div>
 </div>
+
+<script>
+const navbar = document.getElementById("navbar");
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    toggleNavbar();
+});
+
+function toggleNavbar() {
+    console.log(navbar.style.display);
+    if (navbar.style.display == "block") {
+        navbar.style.display = "none";
+    } else {
+        navbar.style.display = "block";
+    }
+    console.log(navbar.style.display);
+}
+</script>
