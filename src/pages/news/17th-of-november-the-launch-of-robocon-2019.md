@@ -4,7 +4,7 @@ lastUpdated: '2018-10-20 19:54:02'
 description: RoboCon 2019 will kick-off on the 17th of November
 layout: ../../layouts/NewsLayout.astro
 image: 
-    url: /images/img_4139-min.jpg
+    url: /images/news/Kickoff2019/img_4139-min.jpg
     alt: unknown
 ---
 # Announcement
@@ -17,6 +17,6 @@ At the kickoff, teams will receive a kit of parts including everything that they
 
 This week we have made significant progress, in designing the competition, programming and assembling the kit. 
 
-![Hard at work](/images/img_4139-min.jpg)
+![Hard at work](/images/news/Kickoff2019/img_4139-min.jpg)
 
-![Soldering components to the board](/images/img_4162-min.jpg)
+![Soldering components to the board](/images/news/Kickoff2019/img_4162-min.jpg)

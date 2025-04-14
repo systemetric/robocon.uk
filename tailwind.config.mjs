@@ -74,6 +74,11 @@ const config = {
 						fontSize: theme('fontSize.2xl'),
 						marginTop: '1rem',
 					},
+					h3: {
+						fontFamily: theme('fontFamily.display').join(', '),
+						fontSize: theme('fontSize.xl'),
+						marginTop: '1rem',
+					},
 					p: {
 						marginTop: '1rem',
 					}

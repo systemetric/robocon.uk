@@ -1,7 +1,7 @@
 ---
 title: RoboCon 2023 Launched
 image: 
-  url: /images/roboconlaunch2023_5974.jpg
+  url: /images/news/Kickoff2023/roboconlaunch2023_5974.jpg
   alt: unknown
 lastUpdated: 2022-10-29T14:04:32.027Z
 description: "On the 29th October 2022, we launched RoboCon 2023: \"do androids
