@@ -6,7 +6,7 @@ interface Props {
 }
 let { clickable = true, href="/" } = Astro.props
 ---
-<a href={clickable ? href : ""} class="logo text-primary" >
+<a href={clickable ? href : ""} class="logo text-[hsl(var(--rclogo-foreground))]" >
     ROBOCON
 </a>
 <style>

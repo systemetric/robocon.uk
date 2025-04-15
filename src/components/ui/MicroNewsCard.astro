@@ -15,7 +15,7 @@ let {title, description, href, linkText, image, lastUpdated} = Astro.props;
 let updatedDate = new Date(lastUpdated);
 let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
-<div class="items-center h-auto border rounded-md shadow-md p-4 hover:scale-105  duration-200 flex flex-col justify-between bg-white">
+<div class="items-center h-auto border rounded-md shadow-md p-4 hover:scale-105  duration-200 flex flex-col justify-between bg-[hsl(var(--background))]">
     <div class="overflow-hidden w-[100%] pr-1">
         <img src={image}/>
     </div>

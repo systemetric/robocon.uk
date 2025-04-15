@@ -59,11 +59,19 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.4rem;
+
+    --rclogo-foreground: 4 100% 57%;
+
+    /* Custom dark mode colour variables */
+
+    --alt-background: 0 0% 100%;
+    --text-dim: 0 0% 25.1%;
+    --news-background: 214.29 31.82% 91.37%;
   }
  
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 15 16% 9.8%;
+    --foreground: 0 0% 100%;
  
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -77,8 +85,8 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
  
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 8.86 97.78% 82.35%;
+    --primary-foreground: 0 0% 0%;
  
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -90,6 +98,14 @@
     --destructive-foreground: 210 40% 98%;
  
     --ring: 212.7 26.8% 83.9%;
+
+    --rclogo-foreground: 4 100% 57%;
+
+    /* Custom dark mode colour variables */
+
+    --alt-background: 8 18.52% 15.88%;
+    --text-dim: 0 0% 63.14%;
+    --news-background: 8 18.52% 15.88%;
   }
 }
  

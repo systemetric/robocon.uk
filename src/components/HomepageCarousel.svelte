@@ -56,14 +56,14 @@
         {/each}
     </Carousel.Content>
     <div
-        class="m-12 w-auto sm:w-72 bg-background absolute bottom-0 sm:bottom-4 px-8 py-6"
+        class="m-12 w-auto sm:w-72 bg-background text-foreground absolute bottom-0 sm:bottom-4 px-8 py-6"
     >
         <h1 class="font-display text-xl">{slides[currentSlide]?.title ?? "Error"}</h1>
         <div class="text-base font-sans">{slides[currentSlide]?.text ?? "It looks like something went wrong. Try refreshing"}</div>
         <Button class="h-8 mt-2 text-lg p-5 font-mono font-semibold" href={slides[currentSlide]?.actionTo ?? "/"}>{slides[currentSlide]?.actionLabel ?? ":("}</Button>
     </div>
-    <Carousel.Previous class="top-auto -bottom-0 left-14 hidden sm:flex" />
+    <Carousel.Previous class="top-auto -bottom-0 left-14 hidden sm:flex text-foreground" />
     <Carousel.Next
-        class="top-auto -bottom-0 right-auto left-[6.6rem] hidden sm:flex"
+        class="top-auto -bottom-0 right-auto left-[6.6rem] hidden sm:flex text-foreground"
     />
 </Carousel.Root>
