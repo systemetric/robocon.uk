@@ -1,0 +1,12 @@
+---
+interface Props {
+    big:string,
+    class?:string,
+}
+let {big, class: inClass} = Astro.props
+---
+<div class={inClass + ""}>
+    <div class="bg-gray-200 rounded-full w-50 p-10 m-10 text-2xl font-display">{big}</div>
+    <div><slot /></div>
+</div>
+

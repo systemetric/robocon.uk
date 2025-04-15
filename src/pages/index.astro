@@ -3,62 +3,90 @@ import "@/globals.css";
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
 import NewsReel from "@/components/NewsReel.astro";
+import { Button } from "@/components/ui/button";
+import Stat from "@/components/Stat.astro";
 ---
 
 <Layout title="RoboCon">
-	<main class="h-auto">
-		<HomepageCarousel
-			client:load
-			speed={10000}
-			slides={[
-				{
-					title: "RoboCon 2025 Dragon's Lair",
-					image: {
-						path: "/images/news/Review2025/IMG_8375.JPG",
-					},
-					text: "Congratulations to all the teams who competed in our last competition, RoboCon 2025 - Dragon's Lair! Read about the competition full of sheep, gems and epic robot dragons!",
-					actionLabel: "Read About It...",
-					actionTo: "/news/robocon-2025-review",
-				},
-				{
-					title: "Accessible To All",
-					image: {
-						path: "/images/general_pages/IMG_8422.JPG",
-					},
-					text: "A free and accessible robotics competition run by the students and alumni of Hills Road Sixth Form College, aimed at Years 9-11. No previous experience is required by staff or students.",
-					actionLabel: "Learn More",
-					actionTo: "/about",
-				},
-				{
-					title: "We Provide The Kit",
-					image: {
-						path: "/images/general_pages/IMG_7992.JPG",
-					},
-					text: "We provide a kit containing all the equipment necessary to build a simple robot, including our BrainBox and a laptop that you can use to program it along with all the documentation. Teams are encouraged to use this kit as inspiration to create a robot as simple or complex as they would like.",
-					actionLabel: "Read our Docs",
-					actionTo: "https://docs.robocon.uk/hardware/the-brainbox/",
-				},
-				{
-					title: "Ongoing Support",
-					image: {
-						path: "/images/general_pages/IMG_7025.JPG",
-					},
-					text: "Building a robot is hard. That's why we offer ongoing support to all teams throughout the building process, this includes our documentation, email support, video calls and in-person visits!",
-					actionLabel: "Get In Touch",
-					actionTo: "/contact",
-				},
-				{
-					title: "Develop STEM Skills",
-					image: {
-						path: "/images/general_pages/IMG_8392.JPG",
-					},
-					text: "Competitors develop problem-solving, teamwork and programming skills as they build a robot in a team and solve problems in the arena!",
-					actionLabel: "Learn More",
-					actionTo: "/about",
-				},
-			]}
-		/>
-		<img src="/images/RoboCon2025-Header.png" class="w-[600px] flex justify-center m-auto mt-2 mb-2" />
-		<NewsReel />
-	</main>
+    <main class="h-auto">
+        <section>
+            <HomepageCarousel
+                client:load
+                speed={10000}
+                slides={[
+                    {
+                        title: "RoboCon 2025 Dragon's Lair",
+                        image: {
+                            path: "/images/news/Review2025/IMG_8375.JPG",
+                        },
+                        text: "Congratulations to all the teams who competed in our last competition, RoboCon 2025 - Dragon's Lair! Read about the competition full of sheep, gems and epic robot dragons!",
+                        actionLabel: "Read About It...",
+                        actionTo: "/news/robocon-2025-review",
+                    },
+                    {
+                        title: "Accessible To All",
+                        image: {
+                            path: "/images/general_pages/IMG_8422.JPG",
+                        },
+                        text: "A free and accessible robotics competition run by the students and alumni of Hills Road Sixth Form College, aimed at Years 9-11. No previous experience is required by staff or students.",
+                        actionLabel: "Learn More",
+                        actionTo: "/about",
+                    },
+                    {
+                        title: "We Provide The Kit",
+                        image: {
+                            path: "/images/general_pages/IMG_7992.JPG",
+                        },
+                        text: "We provide a kit containing all the equipment necessary to build a simple robot, including our BrainBox and a laptop that you can use to program it along with all the documentation. Teams are encouraged to use this kit as inspiration to create a robot as simple or complex as they would like.",
+                        actionLabel: "Read our Docs",
+                        actionTo:
+                            "https://docs.robocon.uk/hardware/the-brainbox/",
+                    },
+                    {
+                        title: "Ongoing Support",
+                        image: {
+                            path: "/images/general_pages/IMG_7025.JPG",
+                        },
+                        text: "Building a robot is hard. That's why we offer ongoing support to all teams throughout the building process, this includes our documentation, email support, video calls and in-person visits!",
+                        actionLabel: "Get In Touch",
+                        actionTo: "/contact",
+                    },
+                    {
+                        title: "Develop STEM Skills",
+                        image: {
+                            path: "/images/general_pages/IMG_8392.JPG",
+                        },
+                        text: "Competitors develop problem-solving, teamwork and programming skills as they build a robot in a team and solve problems in the arena!",
+                        actionLabel: "Learn More",
+                        actionTo: "/about",
+                    },
+                ]}
+            />
+        </section>
+        <section
+            class="flex justify-around items-center flex-row w-full h-fit flex-wrap md:flex-nowrap"
+        >
+            <div class="m-8 p-8 basis-auto flex-grow flex-shrink max-w-[50%]">
+                <img src="/images/general_pages/IMG_7992.JPG" class="w-max h-max"/>
+            </div>
+            <div
+                class="m-8 flex flex-col items-center p-8 basis-auto w-fit justify-evenly h-full flex-grow flex-shrink"
+            >
+                <h1 class="font-display text-xl m-2">About Us</h1>
+                <p class="max-w-[60ch] m-2">
+                    RoboCon is a robotics competition aimed at secondary school
+                    students from Year 9 to Year 11. It offers a unique
+                    opportunity for students in Cambridgeshire to become
+                    involved in Electronics, Robotics and Programming in a fun
+                    and engaging community.
+                </p>
+                <Button variant="outline" class="m-2"> Find Out More </Button>
+            </div>
+        </section>
+        <img
+            src="/images/RoboCon2025-Header.png"
+            class="w-[600px] flex m-auto mt-2 mb-2"
+        />
+        <NewsReel />
+    </main>
 </Layout>
