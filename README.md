@@ -41,3 +41,5 @@ Please remember to remove any images in `images_for_compression` or `compressed_
 - Unable to compress subfolder images
 - Homepage carousel text description is a bit too narrow.
 - Navbar is a bit boring on mobile.
+- No social links
+- Home page could have some more content under the gallery carousel.

@@ -8,7 +8,7 @@ description: See the results of an incredible 2023 RoboCon!
 layout: ../../layouts/NewsLayout.astro
 ---
 
-The fourth Hills Road RoboCon competition took place on the 12th and 13th of April 2023 at Hills Road Sixth Form College to great success. RoboCon 2023 launched in October 2022 with the game “Do androids dream of electric sheepdogs?”, a sheepdog trials themed game in which the ultimate goal was for a team’s robot to move (herd) sheep (cubes) into their pasture or pen. The blog post from the launch event can be found [here](/blog/robocon-2023-launched.html). 
+The fourth Hills Road RoboCon competition took place on the 12th and 13th of April 2023 at Hills Road Sixth Form College to great success. RoboCon 2023 launched in October 2022 with the game “Do androids dream of electric sheepdogs?”, a sheepdog trials themed game in which the ultimate goal was for a team’s robot to move (herd) sheep (cubes) into their pasture or pen. The blog post from the launch event can be found [here](/news/robocon-2023-launched). 
 
 After designing, building and programming autonomous robots in their own time over six months, nine teams put them to the test in the RoboCon arena at Hills Road. 
 
