@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# uncompressed or un-sorted images
+public/images/images_for_compression
+public/images/compressed_images
