@@ -6,7 +6,7 @@ const allPosts = Object.values(import.meta.glob('../pages/news/*.md', { eager: t
 allPosts.sort((a: any, b: any) => new Date(b.frontmatter.lastUpdated).getTime() - new Date(a.frontmatter.lastUpdated).getTime());
 const top3 = allPosts.slice(0, 3);
 ---
-<div class="bg-[hsl(var(--news-background))] p-4">
+<div class="bg-[hsl(var(--alt2-background))] p-4">
     <h1 class="font-display text-4xl font-bold text-center my-4">Latest News</h1>
     <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
         {top3.map((post: any) => 
@@ -21,6 +21,6 @@ const top3 = allPosts.slice(0, 3);
         )}
     </div>
     <div class="flex justify-center">
-        <Button variant="outline" class="m-4 text-black" href="/news">View All News</Button>
+        <Button variant="outline" class="m-4 text-foreground border-[hsl(var(--alt2-background))]" href="/news">View All News</Button>
     </div>
 </div>
