@@ -62,11 +62,14 @@
 
     --rclogo-foreground: 4 100% 57%;
 
-    /* Custom dark mode colour variables */
+    /* Custom light mode colour variables */
 
     --alt-background: 0 0% 100%;
+    --alt2-background: 214.29 31.82% 91.37%;
+    --alt3-background: 215.56 31.03% 17.06%;
     --text-dim: 0 0% 25.1%;
-    --news-background: 214.29 31.82% 91.37%;
+    --text-subtitle: 215.38 22.03% 34.71%;
+    --hover-background: 215.38 22.03% 34.71%;
   }
  
   .dark {
@@ -99,13 +102,14 @@
  
     --ring: 212.7 26.8% 83.9%;
 
-    --rclogo-foreground: 4 100% 57%;
-
     /* Custom dark mode colour variables */
 
     --alt-background: 8 18.52% 15.88%;
+    --alt2-background: 8 18.52% 15.88%;
+    --alt3-background: 15 16% 9.8%;
     --text-dim: 0 0% 63.14%;
-    --news-background: 8 18.52% 15.88%;
+    --text-subtitle: 0 0% 100%;
+    --hover-background: 0 0% 100%;
   }
 }
  
