@@ -20,6 +20,7 @@ let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', 
         <img src={image} class="-left-4"/>
     </div>
     <div class="m-4 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+        <img src={image} class="-left-4 md:hidden"/>
         <h1 class="font-display text-xl m-4">{title}</h1>
         <p class="font-sans max-w-[60ch]">{description}</p>
         <Button class="h-8 mt-2 text-lg p-5 font-mono font-semibold w-[100%]" href={href}>{linkText}</Button>
