@@ -4,16 +4,22 @@ import '@/globals.css';
 import Card from "@/components/ui/Card.astro";
 ---
 
-<Layout title="Compete">
+<Layout title="Compete at RoboCon">
 	<main class="min-h-auto">
-        <img src="/images/IMG_7632.JPG" class="h-[400px] w-full object-cover"/></img>
+        <img src="/images/news/Review2025/IMG_8375.JPG" class="h-[400px] w-full object-cover"/></img>
         <h1 class="m-4 font-display text-4xl text-center">Compete</h1>
         <div class="w-[100%] max-w-[1200px] m-auto">
-            <p class="m-4 font-sans text-center">RoboCon is a robotics competition which takes place anually at Hills Road Sixth Form College, Cambridge CB2 8PE. The competition is primarily targeted at those in secondary school, however we have the tools to accomodate for those younger as well. The competition launches in October and takes place during April in the Easter holidays. </p>
+            <p class="m-4 font-sans text-center">RoboCon is a robotics competition which takes place anually at Hills Road Sixth Form College, Cambridge CB2 8PE. The competition is primarily targeted at those in secondary school, however we have the tools to accomodate for those younger as well. The competition launches in October/November and takes place during April in the Easter holidays. We can't wait to meet your team and see what you create!</p>
             <h2 class="m-4 font-display text-2xl text-center">Compete Now!</h2>
-            <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-2 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
-                <Card title="Email" description="Let us know that you're interested" href="mailto:robotics@hrsfc.ac.uk" linkText="Email Us" backgroundColour="red"/>
-                <Card title="Launch" description="Come and visit us at Hills Road on the launch day for competition information. Details on our next launch can be found on our 'News' page" href="/news" linkText="Book Now" backgroundColour="green"/>
+            
+            <div class="bg-orange-300 border-r-4 border-b-4 border-l-4 border-orange-500 rounded-lg p-4 w-3/4 justify-center m-auto">
+                <h2 class="font-display">Add us to your whitelist!</h2>
+                <p class="font-sans text-center">We've been having issues with our emails ending up in spam folders, causing them to be missed. To ensure this doesn't happen to your team, please add <strong>robotics@hrsfc.ac.uk and robotics@hillsroad.ac.uk</strong> to your email whitelist. Let us know if you haven't heard from us, our emails may have been blocked!</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-rows-1 md:grid-cols-2 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
+                <Card title="Contact Us" description="Please do get in touch with us if you have any questions or queries, we'd love to help!" href="mailto:robotics@hrsfc.ac.uk" linkText="Email Us" backgroundColour="red"/>
+                <Card title="Sign Up Here" description="Follow the link below to head over to our RoboCon 2026 sign up form." href="https://forms.office.com/e/EiXqvxqTDr" linkText="Sign Up" backgroundColour="green"/>
             </div>
         </div>
     </main>

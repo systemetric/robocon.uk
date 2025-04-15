@@ -1,0 +1,54 @@
+---
+import Layout from "@/layouts/RCHeaderFooterLayout.astro";
+import '@/globals.css';
+
+import { Accordion, AccordionItem } from 'accessible-astro-components'
+---
+
+<Layout title="About Us">
+	<main class="min-h-lvh w-[100%]">
+		<img src="/images/news/Review2025/IMG_8375.JPG" class="h-[400px] w-full object-cover"/></div>
+
+        <div class="md:w-1/2 m-auto">
+            <h1 class="m-4 font-display text-4xl text-center">RoboCon For Students</h1>
+            <a href="/about">&lt;- About RoboCon</a>
+            
+
+            <Accordion class="m-auto prose prose-h1:font-display">
+                <AccordionItem
+                    title="How do I enter?"
+                    variant="chevron"
+                    open
+                >
+                    <p>RoboCon is free to enter, all you need to do is grab a teacher or trusted adult willing to run your team. They don't need any past experience, all the information they'll need is on our <a href="/for-teachers">for teachers</a> page.</p>
+                </AccordionItem>
+            </Accordion>
+            <Accordion class="m-auto prose prose-h1:font-display">
+                <AccordionItem
+                    title="What experience do I need?"
+                    variant="chevron"
+                >
+                    <p>Absolutely none. You just need an interest in building a robot! We provide 1:1 support throughout the year to help you, we also provide all the documentation online, why not <a href="https://docs.robocon.uk" target="_blank">take a look at the docs</a>?</p>
+                </AccordionItem>
+            </Accordion>
+            <Accordion class="m-auto prose prose-h1:font-display">
+                <AccordionItem
+                    title="How long does it take?"
+                    variant="chevron"
+                >
+                    <p>After our kickoff event, you'll have 5-6 months to build a robot up to the competition held in Cambridge at Hills Road. Usually, teams hold a weekly session as an after school club as time for building their robot each week.</p>
+                </AccordionItem>
+            </Accordion>
+        </div>
+        
+	</main>
+</Layout>
+
+<style is:global>
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-family: 'Rubik Mono One', sans-serif;
+    }
+</style>

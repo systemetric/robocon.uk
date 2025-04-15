@@ -1,0 +1,127 @@
+---
+import Layout from "@/layouts/RCHeaderFooterLayout.astro";
+import '@/globals.css';
+
+import { Accordion, AccordionItem } from 'accessible-astro-components'
+---
+
+<Layout title="About Us">
+	<main class="min-h-lvh w-[100%]">
+		<img src="/images/news/Review2025/IMG_8375.JPG" class="h-[400px] w-full object-cover"/></div>
+
+        <div class="md:w-1/2 m-auto">
+            <h1 class="m-4 font-display text-4xl text-center">RoboCon For Teachers</h1>
+            <a href="/about">&lt;- About RoboCon</a>
+
+            <Accordion class="m-auto prose prose-h1:font-display">
+                <AccordionItem
+                    title="What is RoboCon?"
+                    variant="chevron"
+                    open
+                >
+                    <p>RoboCon is a free to enter robotics competition aimed towards Year 9-11 students, no matter the level of experience and expertise they may have in these fields. If you are interested in coming to the competition or to find out more yourself, please <a href="/contact">contact us</a>.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What's the aim?"
+                    variant="chevron"
+                >
+                    <p>By the end of the season, students will have built and programmed a totally autonomous robot to compete in a two-day final round. The only interaction the students have with the robot during the competition rounds is to push the "GO" button. This is partially done for safety reasons, but also because it matches the real world of software in a far more accurate manner. The team will have access to see what the robot logs and what it sees, but that is as far as their interaction with the team's robot will go.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="Will this work with our IT systems?"
+                    variant="chevron"
+                >
+                    <p>By providing you with a laptop, it will not be necessary to use any of your school IT equiptment, meaning no settings will need to be changed. Please add <a href="mailto:robotics@hrsfc.ac.uk">robotics@hrsfc.ac.uk</a> and <a href="mailto:robotics@hillsroad.ac.uk">robotics@hillsroad.ac.uk</a> to your email whitelist, as we have had issues with our emails going to teacher's junk folders!</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="Won't this be really hard?"
+                    variant="chevron"
+                >
+                    <p>The kit that was put together for the teams is simple enough for anyone to get running, so it should not be a challenge to create a running robot of a basic level. How the teams wish to take it further is down to them. We provide <a href="https://docs.robocon.uk" target="_blank">extensive documentation</a> on how the robot can be used and programmed, and we provide 1:1 support to any students (or staff!) who would like it for free! Additionally, we run a kickoff event where we guide you through how to set up and program a basic robot in person.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What happens at a kickoff event?"
+                    variant="chevron"
+                >
+                    <p>A kickoff consists of a workshop event where we introduce the game, then teams are tasked with performing a set of basic software challenges. Each of these challenges will see a function of the supplied kit be exercised. While it is not a requirement to attend a kickoff, it is highly recommended. Last year we had a few visitors which were "teacher-only", as well as a few schools (from further afield) asking for the kit to be posted. Though these schools found it harder to get started, most made it to the competition with a working robot.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What if our robot doesn't work during the final?"
+                    variant="chevron"
+                >
+                    <p>The running order of the final allows teams to improve upon their code in real time, fixing problems which they may not have encountered before via testing. The running order also allows teams to modify and adapt their strategies once they have seen the other teams. We provide a "test arena" for development in the team area. Last time each robot got roughly fifteen turns in the main arena, so there is plenty of opportunity for rapid improvement before the knockout stages of the second day. We also provide tinker-time where we help robots fix any bugs during the morning of the first day!</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="How much work will I have to put in over the 5 months?"
+                    variant="chevron"
+                >
+                    <p>You don't need to put in too much work, especially not throughout the allocated time. Frequently, the best performing robots come from the simplest designs and we anticipate most schools completing this in weekly science clubs or in something similar in nature to that.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="Can we compete if we don't have any spare IT at our school?"
+                    variant="chevron"
+                >
+                    <p>At the kickoff event, we provide a kit which includes a Windows-based laptop. This allows teams wireless connection directly to their robot for programming and debugging. The laptop is pre-installed with everything you need to program the robot. You may need access to the internet from a separate device to contact our online help-desk, and the occasional check for blog updates from the RoboCon Team. Otherwise, you don't need anything from your IT. The website is mobile-friendly for students who have their own smart phones.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What else is in the kit?"
+                    variant="chevron"
+                >
+                    <p>Within the centre of the kit is a "Brain Box" which contains the computing and vision module, and is everything needed to run two substantial DC motors and up to four servos. It also offers some digital and analogue IO to control optional additional external circuitry. Most teams will not need to use the ability to extend the electronics although for more adventurous teams, as the kit is Raspberry PI based, generic tutorials for how to attach any USB, UART or I2C device to a PI can be found online. We provide guidance for the most common and simple tasks that students might try to get their robot to perform - such as how to run a high current device like a pump.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="How do the students program their robot?"
+                    variant="chevron"
+                >
+                    <p>Software-wise we have developed a Python library - this greatly reduces the complexity of using the kit including all the computer vision. Coding can all be done on the laptop provided.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="Python is not accessible to all my students. Can they still join in?"
+                    variant="chevron"
+                >
+                    <p>We provide both a Python and a Scratch-like interface, so those who might find Python intimidating are not excluded. If you have students who would rather use their own editor, laptop or phone to develop and upload code then this is also possible.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What is the cost of entry?"
+                    variant="chevron"
+                >
+                    <p>The competition is free to enter and the basic kit will be provided, upon the condition that all the parts of the kit are returned at the end.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="How much will we need to spend on a robot?"
+                    variant="chevron"
+                >
+                    <p>We place no restriction on how teams can add to the components in the kit to realize their robots. The intention is that teams could field a basic robot with little more than the kit and a competitive robot using only additional materials available in an Art or DT classroom, or from their parents' garage.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="What resources are useful?"
+                    variant="chevron"
+                >
+                    <p>If the possibility for resources is available, teams will probably benefit from more substantial servos for whatever manipulation is required. 3D printed parts and vacuum cups have been popular additions with some teams. We can offer advice on buying additional parts, and they don't have to be expensive if bought through the right channels. As an example, eBay vendors are selling packs of four servos for six pounds. In general, additions can be bought quite cheaply, especially if students plan ahead and are prepared to wait for shipping. There is deliberately time in the schedule to allow for this.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="Will we still be able to compete with a low cost robot?"
+                    variant="chevron"
+                >
+                    <p>Yes, absolutely. Don't let this put you off - the simplest robots are frequently the best because they have less to go wrong and teams can focus on programming and testing.</p>
+                </AccordionItem>
+                <AccordionItem
+                    title="How will you help us?"
+                    variant="chevron"
+                >
+                    <p>We will be offering the following assistance to enable teams to be successful: Tutorials at the kickoff. Online support through our forums, blog and documentation. Email support for teacher questions. Saturday drop-in sessions at Hills Road.</p>
+                </AccordionItem>
+            </Accordion>            
+        </div>
+        <p class="text-center">Haven't answered your question? <a href="/contact">Get in touch!</a></p>
+	</main>
+</Layout>
+
+<style is:global>
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-family: 'Rubik Mono One', sans-serif;
+    }
+</style>

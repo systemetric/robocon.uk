@@ -2,31 +2,64 @@
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import '@/globals.css';
 import { Button } from "@/components/ui/button";
+import Card from "@/components/ui/Card.astro";
 ---
 
-<Layout title="About Us">
+<Layout title="About RoboCon">
 	<main class="min-h-lvh w-[100%]">
-		<img src="/images/IMG_7360.JPG" class="h-[400px] w-full object-cover"/></div>
+		<img src="/images/general_pages/IMG_8422.JPG" class="h-[400px] w-full object-cover"/></div>
         <h1 class="m-4 font-display text-4xl text-center">About RoboCon</h1>
+		<p class="font-sans text-center max-w-1/2">RoboCon is a robot competition offered to secondary schools, run by Hills Road students. We provide everything you need, including the kit and 1:1 support for your students.</p>
+		<div class="grid sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 w-[100%] p-8 max-w-[1200px] m-auto">
+            <Card title="For Students" description="Learn all about what it means to compete in RoboCon, and how you can get involved!" href="/for-students" linkText="Learn More" backgroundColour="red"/>
+            <Card title="For Teachers" description="Read our teacher FAQs, and find out what you need to enter (spoiler: it's almost nothing!)" href="/for-teachers" linkText="Read the FAQs" backgroundColour="blue"/>
+            <Card title="For Sponsors" description="Learn about how your company can get involved in the RoboCon action! Our competition would be impossible without the generous support from our sponsors, and we are always looking for more to join us." href="/sponsor" linkText="Sponsor Us" backgroundColour="green"/>
+        </div>
+
 		<div class="p-8 flex items-center content-around">
 			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
-				<img src="/images/IMG_7360.JPG" class="-right-4"/>
+				<img src="/images/general_pages/IMG_8031.JPG" class="-right-4"/>
 			</div>
 			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<img src="/images/general_pages/IMG_8031.JPG" class="-right-4 md:hidden"/>
 				<h1 class="font-display text-xl m-4">What's RoboCon?</h1>
-				<p class="font-sans max-w-[60ch]">RoboCon is a robot competition offered to secondary schools, run by Hills Road students. We provide everything you need, including the kit and 1:1 support for your students!</p>
-				<p class="font-bold">We provide everything, all you need is a teacher!</p>
-				<Button variant="outline" class="m-4">Action Here</Button>
+				<p class="font-sans max-w-[60ch]">RoboCon is a robot competition offered to secondary schools, run by Hills Road students. We provide everything you need, including the kit and 1:1 support for your students.</p>
+				<p class="font-sans max-w-[60ch]">Teachers don't need any past experience to help their students compete, read more on our <a href="/for-teachers">RoboCon for teachers</a> page!</p>
+				<p class="font-sans max-w-[60ch]">Students develop a wide variety of STEM skills while building robots. Teamwork, problem-solving and programming skills are all examples of what your students could gain by becoming a competitor.</p>
+				<p class="font-bold">All you need is space and a teacher!</p>
+				<Button variant="outline" class="m-4" onclick="window.location.href = '/compete'">Sign Up</Button>
 			</div>
 		</div>
 		<div class="p-8 flex items-center content-around">
 			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<img src="/images/general_pages/2023_SR_Team.jpg" class="-left-4 md:hidden"/>
 				<h1 class="font-display text-xl m-4">Who are we?</h1>
-				<div class="font-sans max-w-[60ch]">RoboCon is run by a friendly team of Hills Road students, with the backing of our excellent staff and alumni mentors. We not only manage the running of this competition, but also build our own robots to compete in <a class="underline text-blue-500" href="https://studentrobotics.org/" target="_blank">Student Robotics</a> (think a bigger version of RoboCon!).</div>
-				<Button variant="outline" class="m-4">Action Here</Button>
+				<p class="font-sans max-w-[60ch]">RoboCon is run by a friendly team of Hills Road students, with the backing of our excellent staff and alumni mentors. We not only manage the running of this competition, but also build our own robots to compete in <a class="underline text-blue-500" href="https://studentrobotics.org/" target="_blank">Student Robotics</a> (think a bigger version of RoboCon!).</p>
+				<p class="font-sans max-w-[60ch]">Many of our students have competed in RoboCon in previous years, then joined Hills Road and become a RoboCon volunteer. We run every part of this competition, and can't wait to meet your team and help you build your dream robot!</p>
+				<Button variant="outline" class="m-4" onclick="window.location.href = '/contact'">Get In Touch</Button>
 			</div>
 			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
-				<img src="/images/IMG_7360.JPG" class="-left-4"/>
+				<img src="/images/general_pages/2023_SR_Team.jpg" class="-left-4"/>
+				<p>Team of 2023</p>
+			</div>
+		</div>
+		<div class="p-8 flex items-center content-around">
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/general_pages/IMG_8147.JPG" class="-right-4"/>
+			</div>
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<img src="/images/general_pages/IMG_8147.JPG" class="-right-4 md:hidden"/>
+				<h1 class="font-display text-xl m-4">The Competition</h1>
+				<p class="font-sans max-w-[60ch]">The competition is usually held during the Easter holidays, where teams will compete against each other in rounds for seeding before going head-to-head in knockout rounds up to the final. A rough itinerary we usually follow is shown below:</p>
+				<br>
+				<ul>
+					<li>Day 1 Morning - Tinker Time (fixing up and finishing robots)</li>
+					<li>Day 1 Afternoon - 1st half of rounds</li>
+					<li>Day 2 Morning - 2nd half of rounds</li>
+					<li>Day 2 Afternoon - Knockout rounds, photo shoot and prize giving</li>
+				</ul>
+				<br>
+				<p class="font-sans max-w-[60ch]">The competition is a fun action-packed event, complete with live commentary from our red-shirts, live leaderboards and our sponsors' stalls ready to chat with students!</p>
 			</div>
 		</div>
 	</main>

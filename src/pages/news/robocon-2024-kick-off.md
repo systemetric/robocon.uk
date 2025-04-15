@@ -18,4 +18,4 @@ We wish this year's teams the best of luck with their robot building.  
 
 Missed the event? View the presentation here: <https://www.robocon.uk/kickoff-2024-presentation.pdf>.
 
-You can find the docs at <https://docs.robocon.uk/> and the rules at <https://www.robocon.uk/rulebook.pdf>. For any more help, email us at [robotics@hrsfc.ac.uk](mailto:robotics@hrsfc.ac.uk). Happy robot-making!
+You can find the docs at <https://docs.robocon.uk/> and the rules [here](/rulebooks/Rulebook-2024.pdf). For any more help, email us at [robotics@hrsfc.ac.uk](mailto:robotics@hrsfc.ac.uk). Happy robot-making!

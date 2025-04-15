@@ -8,9 +8,9 @@ description: Read all about this year's "Hot Potato" themed competition, the
   results, and the highlights from the event!
 layout: ../../layouts/NewsLayout.astro
 ---
-The fifth instalment of the Hills Road RoboCon competition took place on the 10th and 11th April 2024. The competition launched in October 2023, and saw several teams come in to begin planning their designs and strategies. The blog post from the launch can be found [here](https://www.robocon.uk/blog/robocon-2024-kick-off-1.html).
+The fifth instalment of the Hills Road RoboCon competition took place on the 10th and 11th April 2024. The competition launched in October 2023, and saw several teams come in to begin planning their designs and strategies. The blog post from the launch can be found [here](/news/robocon-2024-kick-off).
 
-This year the theme was “Hot Potato” which involved a game where robots were tasked with removing potatoes (cubes) from their quadrant of the arena, while also aiming to secure their jacket potato, located opposite to their pasture. After six months of developing their designs and programming their robots, a total of 16 teams put their final products to the test in the RoboCon arena. View the rules of the "Hot Potato" game [here](https://www.robocon.uk/rulebook.pdf).
+This year the theme was “Hot Potato” which involved a game where robots were tasked with removing potatoes (cubes) from their quadrant of the arena, while also aiming to secure their jacket potato, located opposite to their pasture. After six months of developing their designs and programming their robots, a total of 16 teams put their final products to the test in the RoboCon arena. View the rules of the "Hot Potato" game [here](/rulebooks/Rulebook-2024.pdf).
 
 ![](/images/news/Review2024/img_7514.jpg "Impington Village College's Robot")
 

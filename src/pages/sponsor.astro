@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/RCHeaderFooterLayout.astro";
+import '@/globals.css';
+import { Button } from "@/components/ui/button";
+---
+
+<Layout title="Sponsor RoboCon">
+	<main class="min-h-auto">
+        <img src="/images/news/Review2025/IMG_8375.JPG" class="h-[400px] w-full object-cover"/></img>
+        <h1 class="m-4 font-display text-4xl text-center">Sponsor RoboCon</h1>
+
+        <div class="w-[100%] max-w-[1200px] m-auto">
+            <p class="m-4 font-sans text-center">RoboCon is only possible thanks to the generous support of our sponsors. We receive no other funding other than that from our sponsors.</p>
+
+            <div class="p-8 flex items-center content-around">
+                <div class="overflow-hidden m-8 w-1/2 hidden md:block">
+                    <img src="/images/news/Review2025/IMG_8498.JPG" class="-right-4"/>
+                </div>
+                <div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+                    <img src="/images/news/Review2025/IMG_8498.JPG" class="-right-4 md:hidden"/>
+                    <h1 class="font-display text-xl m-4">Why Sponsor Us?</h1>
+                    <p class="font-sans max-w-[60ch]">Our sponsors promote and inspire the technological skills and abilities of the futures best and brightest engineers. By becoming a sponsor, you will be directly providing an opportunity for a diverse group of invdividuals to being their journey into STEM. For those interested in sponsoring RoboCon, please <a href="mailto:robotics@hrsfc.ac.uk">contact us</a>.</p>
+                </div>
+            </div>
+
+            <div class="p-8 flex items-center content-around">
+                <div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+                    <img src="/images/general_pages/IMG_8177.JPG" class="-left-4 md:hidden"/>
+                    <h1 class="font-display text-xl m-4">What are the benefits?</h1>
+                    <p class="font-sans max-w-[60ch]">Along with enabling the RoboCon competition to continue, you'll get your logo displayed on our banners and promotional material. You'll also get the opportunity to have a stand at the competition, allowing you to meet current students competing!</p>
+                </div>
+                <div class="overflow-hidden m-8 w-1/2 hidden md:block">
+                    <img src="/images/general_pages/IMG_8177.JPG" class="-left-4"/>
+                </div>
+            </div>
+        </div>
+        <Button class="h-8 text-lg p-5 font-mono font-semibold w-1/2 flex justify-center m-auto" href="mailto:robotics@hrsfc.ac.uk">Contact Us</Button>
+        <br>
+    </main>
+</Layout>
