@@ -1,14 +1,61 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import Navbar from '@/components/Navbar.astro';
-import '@/globals.css';
+import "@/globals.css";
+import Layout from "@/layouts/RCHeaderFooterLayout.astro";
+import Navbar from "@/components/Navbar.astro";
+import HomepageCarousel from "@/components/HomepageCarousel.svelte";
+import { Button } from "@/components/ui/button";
 ---
 
 <Layout title="Home">
-	<header>
-		<Navbar/>
+	<header class="sticky top-0 z-50">
+		<Navbar />
 	</header>
-	<main>
-
+	<main class="h-auto">
+		<HomepageCarousel
+			client:load
+			speed={10000}
+			slides={[
+				{
+					title: "Lorem Ipsum",
+					image: {
+						path: "/images/IMG_7815.JPG",
+					},
+					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
+					actionLabel: "Click",
+					actionTo: "/",
+				},
+				{
+					title: "2 Lorem 2 Ipsum",
+					image: {
+						path: "/images/IMG_7294.JPG",
+					},
+					text: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
+					actionLabel: "Click 2",
+					actionTo: "/",
+				},
+				{
+					title: "Lorem Ipsum 3: Revenge of the if()",
+					image: {
+						path: "/images/IMG_7311.JPG",
+					},
+					text: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
+					actionLabel: "Click 3",
+					actionTo: "/",
+				},
+			]}
+		/>
+		<div class="p-8 flex items-center content-around">
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/IMG_7360.JPG" class="-right-4"/>
+			</div>
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<h1 class="font-display text-xl m-4">About Us</h1>
+				<div class="font-sans max-w-[60ch]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.</div>
+				<Button variant="outline" class="m-4">Action Here</Button>
+			</div>
+		</div>
+		<div class="p-8 w-full bg-gray-300">
+			
+		</div>
 	</main>
 </Layout>
