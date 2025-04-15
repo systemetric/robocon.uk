@@ -2,7 +2,6 @@
 import "@/globals.css";
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
-import { Button } from "@/components/ui/button";
 import NewsReel from "@/components/NewsReel.astro";
 ---
 
@@ -13,44 +12,52 @@ import NewsReel from "@/components/NewsReel.astro";
 			speed={10000}
 			slides={[
 				{
-					title: "Lorem Ipsum",
+					title: "RoboCon 2025 Dragon's Lair",
 					image: {
-						path: "/images/IMG_7815.JPG",
+						path: "/images/news/Review2025/IMG_8375.JPG",
 					},
-					text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
-					actionLabel: "Click",
-					actionTo: "/",
+					text: "Congratulations to all the teams who competed in our last competition, RoboCon 2025 - Dragon's Lair! Read about the competition full of sheep, gems and epic robot dragons!",
+					actionLabel: "Read About It...",
+					actionTo: "/news/robocon-2025-review",
 				},
 				{
-					title: "2 Lorem 2 Ipsum",
+					title: "Accessible To All",
 					image: {
-						path: "/images/IMG_7294.JPG",
+						path: "/images/general_pages/IMG_8422.JPG",
 					},
-					text: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
-					actionLabel: "Click 2",
-					actionTo: "/",
+					text: "A free and accessible robotics competition run by the students and alumni of Hills Road Sixth Form College, aimed at Years 9-11. No previous experience is required by staff or students.",
+					actionLabel: "Learn More",
+					actionTo: "/about",
 				},
 				{
-					title: "Lorem Ipsum 3: Revenge of the if()",
+					title: "We Provide The Kit",
 					image: {
-						path: "/images/IMG_7311.JPG",
+						path: "/images/general_pages/IMG_7992.JPG",
 					},
-					text: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.",
-					actionLabel: "Click 3",
-					actionTo: "/",
+					text: "We provide a kit containing all the equipment necessary to build a simple robot, including our BrainBox and a laptop that you can use to program it along with all the documentation. Teams are encouraged to use this kit as inspiration to create a robot as simple or complex as they would like.",
+					actionLabel: "Read our Docs",
+					actionTo: "https://docs.robocon.uk/hardware/the-brainbox/",
+				},
+				{
+					title: "Ongoing Support",
+					image: {
+						path: "/images/general_pages/IMG_7025.JPG",
+					},
+					text: "Building a robot is hard. That's why we offer ongoing support to all teams throughout the building process, this includes our documentation, email support, video calls and in-person visits!",
+					actionLabel: "Get In Touch",
+					actionTo: "/contact",
+				},
+				{
+					title: "Develop STEM Skills",
+					image: {
+						path: "/images/general_pages/IMG_8392.JPG",
+					},
+					text: "Competitors develop problem-solving, teamwork and programming skills as they build a robot in a team and solve problems in the arena!",
+					actionLabel: "Learn More",
+					actionTo: "/about",
 				},
 			]}
 		/>
-		<div class="p-8 flex items-center content-around">
-			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
-				<img src="/images/IMG_7360.JPG" class="-right-4"/>
-			</div>
-			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
-				<h1 class="font-display text-xl m-4">About Us</h1>
-				<div class="font-sans max-w-[60ch]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis erat in ante dignissim euismod id quis diam.</div>
-				<Button variant="outline" class="m-4">Action Here</Button>
-			</div>
-		</div>
 		<NewsReel />
 	</main>
 </Layout>

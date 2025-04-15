@@ -1,54 +1,43 @@
-# Astro Starter Kit: Basics
+# The RoboCon Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+This repo contains the public RoboCon website - robocon.uk
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+It has been built with a mixture of `Astro` and `Svelte` components, with `Tailwind` CSS and `Bits UI`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Images are commited straight to this repo, so please make sure you **compress all images**, see the guide below.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Setting up your environment
 
-## 🚀 Project Structure
+1. Make sure you have the latest version of `Node` installed (tip: use `nvm`).
+2. Run `npm install` to install required dependencies.
+3. Run `npm run dev` to run the live preview.
 
-Inside of your Astro project, you'll see the following folders and files:
+It should be that simple :)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## How to write a blog post
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Head over to `src/pages/news`.
+2. Create a new markdown file, try and keep the same formatting as before.
+3. Copy the top of another markdown file (the bit before the `---`), this will apply all the styling. Just change the bits you need to!
+4. Write your markdown.
+5. Check the news section. 
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+> If one of your headings or styles is not being formatted correctly, change the Tailwind CSS values in the `tailwind.config.mjs` file under the `Prose:` section. Some Markdown styles have not yet been written!
 
-Any static assets, like images, can be placed in the `public/` directory.
+If you need to add images to your post (**AFTER YOU HAVE COMPRESSED THEM**), add them in `public/images/<Relevant Folder>`. Everything in the `public` directory is available straight away as a static endpoint.
 
-## 🧞 Commands
+## Compressing Images
 
-All commands are run from the root of the project, from a terminal:
+To prevent issues with commiting lots of large files (and to speed up website load times), you must compress all images or large files so they are roughly less than 2MB each. Luckily, there's a built-in tool you can use for this.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Place the uncompressed images into `public/images/images_for_compression` folder. You might need to make the `images_for_compression` folder if it doesn't already exist. Do not create any subfolders, as these images will be ignored (yes, known bug).
+2. Run `npm run images:compress`.
+3. Your compressed images will now be in `public/images/compressed_images`. Copy these wherever they should be.
 
-## 👀 Want to learn more?
+Please remember to remove any images in `images_for_compression` or `compressed_images` to prevent them being accidentally added to the repo.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Known Bugs
+
+- Unable to compress subfolder images
+- Homepage carousel text description is a bit too narrow.
+- Navbar is a bit boring on mobile.
