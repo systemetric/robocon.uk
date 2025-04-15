@@ -28,9 +28,9 @@ import Button from "@/components/ui/button/button.svelte";
 </div>
 
 <script>
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar")!;
 
-document.getElementById("hamburger").addEventListener("click", function() {
+document.getElementById("hamburger")!.addEventListener("click", function() {
     toggleNavbar();
 });
 
