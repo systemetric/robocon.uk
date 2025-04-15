@@ -4,7 +4,7 @@ import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
 import NewsReel from "@/components/NewsReel.astro";
 import { Button } from "@/components/ui/button";
-import Stat from "@/components/Stat.astro";
+import SponsorLogo from "@/components/SponsorLogo.astro";
 ---
 
 <Layout title="RoboCon">
@@ -64,13 +64,13 @@ import Stat from "@/components/Stat.astro";
             />
         </section>
         <section
-            class="flex justify-around items-center flex-row w-full h-fit flex-wrap md:flex-nowrap"
+            class="flex justify-around items-center flex-row w-full h-fit flex-wrap md:flex-nowrap p-8"
         >
-            <div class="m-8 p-8 basis-auto flex-grow flex-shrink max-w-[50%]">
-                <img src="/images/general_pages/IMG_7992.JPG" class="w-max h-max"/>
+            <div class="m-8 basis-auto flex-grow flex-shrink max-w-[50%]">
+                <img src="/images/general_pages/IMG_7992.JPG" class="h-full"/>
             </div>
             <div
-                class="m-8 flex flex-col items-center p-8 basis-auto w-fit justify-evenly h-full flex-grow flex-shrink"
+                class="m-8 flex flex-col items-center basis-auto w-fit justify-evenly h-full flex-grow flex-shrink"
             >
                 <h1 class="font-display text-xl m-2">About Us</h1>
                 <p class="max-w-[60ch] m-2">
@@ -80,10 +80,21 @@ import Stat from "@/components/Stat.astro";
                     involved in Electronics, Robotics and Programming in a fun
                     and engaging community.
                 </p>
-                <Button variant="outline" class="m-2"> Find Out More </Button>
+                <Button variant="outline" class="m-2" onClick="location.href='/about'"> Find Out More </Button>
             </div>
         </section>
-		
-        <NewsReel />
+		<section>
+			<NewsReel />
+		</section>
+		<section class="flex items-center flex-col justify-evenly p-4">
+			<h1 class="font-display text-2xl p-4 m-4">Our Sponsors</h1>
+			<div class="flex flex-wrap w-fit m-4 p-4">
+				<SponsorLogo src="/images/logos/darktrace.png" alt="Darktrace Logo" link="https://www.darktrace.com"/>
+				<SponsorLogo src="/images/logos/frontier.png" alt="Frontier Development Logo" link="https://www.frontier.co.uk"/>
+				<SponsorLogo src="/images/logos/microsoft.png" alt="Microsoft Logo" link="https://www.microsoft.com"/>
+				<SponsorLogo src="/images/logos/redgate.png" alt="Redgate Logo" link="https://www.red-gate.com/"/>
+				<SponsorLogo src="/images/logos/ttp.png" alt="The Technology Partnership Logo" link="https://www.ttp.com/"/>
+			</div>
+		</section>
     </main>
 </Layout>

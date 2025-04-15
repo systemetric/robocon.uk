@@ -29,8 +29,7 @@
     $effect(() => {
         if (api) {
             api.on("scroll", (el) => { // Yes this gets spammed as the slide slides, but `settle` from the embla docs doesnt seem to be working.
-                currentSlide = el.slidesInView()[0] ?? 0 // default to 0 if no slides in view (something has gone horrible wrong)
-                // console.log(currentSlide)
+                currentSlide = el.selectedScrollSnap()
             });
         }
     });
@@ -56,14 +55,14 @@
         {/each}
     </Carousel.Content>
     <div
-        class="m-12 w-auto sm:w-72 bg-background absolute bottom-0 sm:bottom-4 px-8 py-6"
+        class="m-12 w-auto sm:w-72 bg-background absolute bottom-0 sm:bottom-4 px-8 py-6 rounded-md shadow-md"
     >
         <h1 class="font-display text-xl">{slides[currentSlide]?.title ?? "Error"}</h1>
         <div class="text-base font-sans">{slides[currentSlide]?.text ?? "It looks like something went wrong. Try refreshing"}</div>
         <Button class="h-8 mt-2 text-lg p-5 font-mono font-semibold" href={slides[currentSlide]?.actionTo ?? "/"}>{slides[currentSlide]?.actionLabel ?? ":("}</Button>
     </div>
-    <Carousel.Previous class="top-auto -bottom-0 left-14 hidden sm:flex" />
+    <Carousel.Previous class="top-auto -bottom-0 left-14 hidden sm:flex shadow-md" />
     <Carousel.Next
-        class="top-auto -bottom-0 right-auto left-[6.6rem] hidden sm:flex"
+        class="top-auto -bottom-0 right-auto left-[6.6rem] hidden sm:flex shadow-md"
     />
 </Carousel.Root>

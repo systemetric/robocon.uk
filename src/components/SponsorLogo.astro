@@ -1,0 +1,12 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    link: string;
+}
+let { src, alt, link } = Astro.props;
+---
+
+<a class="w-48 m-10" href={link}>
+    <img src={src} alt={alt}/>
+</a>
