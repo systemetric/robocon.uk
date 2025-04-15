@@ -95,4 +95,4 @@ Don’t Walk, do the robot!
 
 ![](/images/news/Review2025/IMG_8498.JPG "RoboCon 2025 red shirts")
 
-- The Red Shirts
+Oliver Corrigan - HRSFC Robotics Leader 2025
