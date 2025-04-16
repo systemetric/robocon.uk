@@ -15,7 +15,7 @@ let {title, description, href, linkText, image, lastUpdated} = Astro.props;
 let updatedDate = new Date(lastUpdated);
 let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
-<div class="flex items-center content-around h-auto border rounded-md shadow-md p-2 hover:scale-105 duration-200 bg-white">
+<div class="flex items-center content-around h-auto border border-[hsl(var(--alt2-background))] rounded-md shadow-md p-2 hover:scale-105 duration-200 bg-[hsl(var(--background))]">
     <div class="overflow-hidden m-4 w-1/2 hidden md:block">
         <img src={image} class="-left-4"/>
     </div>
@@ -24,6 +24,6 @@ let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', 
         <h1 class="font-display text-xl m-4">{title}</h1>
         <p class="font-sans max-w-[60ch]">{description}</p>
         <Button class="h-8 mt-2 text-lg p-5 font-mono font-semibold w-[100%]" href={href}>{linkText}</Button>
-        <p class="text-slate-600 text-sm italic mt-[5px]">{"Last updated: "+lastUpdatedStr}</p>
+        <p class="text-[hsl(var(--text-subtitle))] text-sm italic mt-[5px]">{"Last updated: "+lastUpdatedStr}</p>
     </div>
 </div>
