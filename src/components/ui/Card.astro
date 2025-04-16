@@ -14,7 +14,7 @@ if (backgroundColour == null) {
     backgroundColour = "red";
 }
 ---
-<div class="items-center h-auto border rounded-md shadow-md p-4 hover:scale-105  duration-200 flex flex-col justify-between">
+<div class="items-center h-auto border border-[hsl(var(--alt2-background))] rounded-md shadow-md p-4 hover:scale-105  duration-200 flex flex-col justify-between">
     <slot />
     <h1 class="font-display text-xl m-4 text-center">{title}</h1>
     <p>{description}</p>

@@ -15,7 +15,7 @@
 
 <ButtonPrimitive.Root
 	{builders}
-	class={cn(buttonVariants({ variant, size, className }))+" no-underline"}
+	class={cn(buttonVariants({ variant, size, className }))+" no-underline dark:border-[hsl(var(--alt2-background))] dark:hover:bg-primary dark:hover:border-primary dark:hover:text-black"}
 	type="button"
 	{...$$restProps}
 	on:click
