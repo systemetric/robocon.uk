@@ -18,14 +18,16 @@ import ThemeToggle from "./ThemeToggle.astro";
         </svg>
     </div>
     <div id="navbar" class="md:flex md:float-end items-center h-full hidden"> 
-        <!-- NOTE these being hidden on small aspect rations is a dev fix to stop them messing with other layout. should fix in future. -->
+        <!-- NOTE these being hidden on small aspect ratios is a dev fix to stop them messing with other layout. should fix in future. -->
         <NavbarLink to="/about">About Us</NavbarLink>
         <NavbarLink to="/news">News</NavbarLink>
         <NavbarLink to="https://docs.robocon.uk">Docs</NavbarLink>
         <NavbarLink to="/compete">Compete</NavbarLink>
         <NavbarLink to="/sponsor">Sponsor</NavbarLink>
         <Button class="text-sm font-mono font-semibold bg-primary" href="/contact">Get In Touch</Button>
-        <ThemeToggle/>
+        <div>
+            <ThemeToggle/>
+        </div>
     </div>
 </div>
 
