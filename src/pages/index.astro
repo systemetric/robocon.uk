@@ -3,6 +3,7 @@ import "@/globals.css";
 import Layout from "@/layouts/RCHeaderFooterLayout.astro";
 import HomepageCarousel from "@/components/HomepageCarousel.svelte";
 import NewsReel from "@/components/NewsReel.astro";
+import { Button } from "@/components/ui/button";
 ---
 
 <Layout title="RoboCon">
@@ -58,8 +59,19 @@ import NewsReel from "@/components/NewsReel.astro";
 				},
 			]}
 		/>
-		<img src="/images/RoboCon2025-Header.png" class="w-[600px] flex justify-center m-auto mt-2 mb-2 dark:hidden" />
-		<img src="/images/RoboCon2025-Header-Dark.png" class="w-[600px] flex justify-center m-auto mt-2 mb-2 hidden dark:block" />
+
+		<div class="p-8 flex items-center content-around">
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<img src="/images/general_pages/RC2026-SignUp-Sticker.png" class="-left-4 md:hidden cursor-pointer" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"/>
+				<h1 class="font-display text-xl m-4">Sign Up for RoboCon 2026!</h1>
+				<p class="font-sans max-w-[60ch]">RoboCon 2026 is just around the corner. We'll be launching our brand new game this November, so sign-up below to receive an email the moment the competition and kickoff event are officially announced!</p>
+				<Button variant="outline" class="m-4" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'">Sign Up Now</Button>
+			</div>
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/general_pages/RC2026-SignUp-Sticker.png" class="-left-4 cursor-pointer" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"/>
+			</div>
+		</div>
+
 		<NewsReel />
 	</main>
 </Layout>
