@@ -30,7 +30,7 @@
     "guage": "^0.0.0",
     "lucide-svelte": "^0.462.0",
     "mkdirp": "^0.5.1",
-    "sharp": "^0.26.0",
+    "sharp": "^0.32.6",
     "tailwind-merge": "^2.5.5",
     "tailwind-variants": "^0.3.0"
   }
