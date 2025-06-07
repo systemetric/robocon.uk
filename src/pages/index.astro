@@ -72,6 +72,17 @@ import { Button } from "@/components/ui/button";
 			</div>
 		</div>
 
+		<div class="p-8 flex items-center content-around">
+			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
+				<img src="/images/general_pages/sponsors2025.png" class="-right-4 md:block cursor-pointer" onclick="window.location.href = '/sponsor'"/>
+			</div>
+			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
+				<img src="/images/general_pages/sponsors2025.png" class="-right-4 cursor-pointer md:hidden" onclick="window.location.href = '/sponsor'"/>
+				<h1 class="font-display text-xl m-4">Our Sponsors</h1>
+				<p class="font-sans max-w-[60ch]">The RoboCon competition is only possible thanks to the generosity of our sponsors, we receive no other funding. Thank you for your support!</p>
+				<Button variant="outline" class="m-4" onclick="window.location.href = '/sponsor'">Sponsor Us</Button>
+			</div>
+		</div>
 		<NewsReel />
 	</main>
 </Layout>
