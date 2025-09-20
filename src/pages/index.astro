@@ -7,82 +7,172 @@ import { Button } from "@/components/ui/button";
 ---
 
 <Layout title="RoboCon">
-	<main class="h-auto">
-		<HomepageCarousel
-			client:load
-			speed={10000}
-			slides={[
-				{
-					title: "RoboCon 2025 Dragon's Lair",
-					image: {
-						path: "/images/news/Review2025/IMG_8375.JPG",
-					},
-					text: "Congratulations to all the teams who competed in our last competition, RoboCon 2025 - Dragon's Lair! Read about the competition full of sheep, gems and epic robot dragons!",
-					actionLabel: "Read About It...",
-					actionTo: "/news/robocon-2025-review",
-				},
-				{
-					title: "Accessible To All",
-					image: {
-						path: "/images/general_pages/IMG_8422.JPG",
-					},
-					text: "A free and accessible robotics competition run by the students and alumni of Hills Road Sixth Form College, aimed at Years 9-11. No previous experience is required by staff or students.",
-					actionLabel: "Learn More",
-					actionTo: "/about",
-				},
-				{
-					title: "We Provide The Kit",
-					image: {
-						path: "/images/general_pages/IMG_7992.JPG",
-					},
-					text: "We provide a kit containing all the equipment necessary to build a simple robot, including our BrainBox and a laptop that you can use to program it along with all the documentation. Teams are encouraged to use this kit as inspiration to create a robot as simple or complex as they would like.",
-					actionLabel: "Read our Docs",
-					actionTo: "https://docs.robocon.uk/hardware/the-brainbox/",
-				},
-				{
-					title: "Ongoing Support",
-					image: {
-						path: "/images/general_pages/IMG_7025.JPG",
-					},
-					text: "Building a robot is hard. That's why we offer ongoing support to all teams throughout the building process, this includes our documentation, email support, video calls and in-person visits!",
-					actionLabel: "Get In Touch",
-					actionTo: "/contact",
-				},
-				{
-					title: "Develop STEM Skills",
-					image: {
-						path: "/images/general_pages/IMG_8392.JPG",
-					},
-					text: "Competitors develop problem-solving, teamwork and programming skills as they build a robot in a team and solve problems in the arena!",
-					actionLabel: "Learn More",
-					actionTo: "/about",
-				},
-			]}
-		/>
+    <main class="h-auto">
+        <HomepageCarousel
+            client:load
+            speed={10000}
+            slides={[
+                {
+                    title: "RoboCon 2025 Dragon's Lair",
+                    image: {
+                        path: "/images/news/Review2025/IMG_8375.JPG",
+                    },
+                    text: "Congratulations to all the teams who competed in our last competition, RoboCon 2025 - Dragon's Lair! Read about the competition full of sheep, gems and epic robot dragons!",
+                    actionLabel: "Read About It...",
+                    actionTo: "/news/robocon-2025-review",
+                },
+                {
+                    title: "Accessible To All",
+                    image: {
+                        path: "/images/general_pages/IMG_8422.JPG",
+                    },
+                    text: "A free and accessible robotics competition run by the students and alumni of Hills Road Sixth Form College, aimed at Years 9-11. No previous experience is required by staff or students.",
+                    actionLabel: "Learn More",
+                    actionTo: "/about",
+                },
+                {
+                    title: "We Provide The Kit",
+                    image: {
+                        path: "/images/general_pages/IMG_7992.JPG",
+                    },
+                    text: "We provide a kit containing all the equipment necessary to build a simple robot, including our BrainBox and a laptop that you can use to program it along with all the documentation. Teams are encouraged to use this kit as inspiration to create a robot as simple or complex as they would like.",
+                    actionLabel: "Read our Docs",
+                    actionTo: "https://docs.robocon.uk/hardware/the-brainbox/",
+                },
+                {
+                    title: "Ongoing Support",
+                    image: {
+                        path: "/images/general_pages/IMG_7025.JPG",
+                    },
+                    text: "Building a robot is hard. That's why we offer ongoing support to all teams throughout the building process, this includes our documentation, email support, video calls and in-person visits!",
+                    actionLabel: "Get In Touch",
+                    actionTo: "/contact",
+                },
+                {
+                    title: "Develop STEM Skills",
+                    image: {
+                        path: "/images/general_pages/IMG_8392.JPG",
+                    },
+                    text: "Competitors develop problem-solving, teamwork and programming skills as they build a robot in a team and solve problems in the arena!",
+                    actionLabel: "Learn More",
+                    actionTo: "/about",
+                },
+            ]}
+        />
 
-		<div class="p-8 flex items-center content-around">
-			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
-				<img src="/images/general_pages/RC2026-SignUp-Sticker.png" class="-left-4 md:hidden cursor-pointer" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"/>
-				<h1 class="font-display text-xl m-4">Sign Up for RoboCon 2026!</h1>
-				<p class="font-sans max-w-[60ch]">RoboCon 2026 is just around the corner. We'll be launching our brand new game this November, so sign-up below to receive an email the moment the competition and kickoff event are officially announced!</p>
-				<Button variant="outline" class="m-4" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'">Sign Up Now</Button>
-			</div>
-			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
-				<img src="/images/general_pages/RC2026-SignUp-Sticker.png" class="-left-4 cursor-pointer" onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"/>
-			</div>
-		</div>
+        <div class="p-8 flex items-center content-around">
+            <div
+                class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around"
+            >
+                <img
+                    src="/images/general_pages/RC2026-SignUp-Sticker.png"
+                    class="-left-4 md:hidden cursor-pointer"
+                    onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"
+                />
+                <h1 class="font-display text-xl m-4">
+                    Sign Up for RoboCon 2026!
+                </h1>
+                <p class="font-sans max-w-[60ch] text-center">
+                    RoboCon 2026 is just around the corner. We'll be launching
+                    our brand new game on the 1st of November. Haven't signed up
+                    yet? Sign up and view the calendar below.
+                </p>
+                <Button
+                    variant="outline"
+                    class="m-4"
+                    onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"
+                    >Sign Up Now</Button
+                >
+            </div>
+            <div class="overflow-hidden m-8 hidden md:block">
+                <img
+                    src="/images/general_pages/RC2026-SignUp-Sticker.png"
+                    class="-left-4 cursor-pointer"
+                    onclick="window.location.href = 'https://forms.office.com/e/EiXqvxqTDr'"
+                />
+            </div>
+        </div>
+    </main>
 
-		<div class="p-8 flex items-center content-around">
-			<div class="overflow-hidden m-8 w-1/2 hidden md:block">
-				<img src="/images/general_pages/sponsors2025.png" class="-right-4 md:block cursor-pointer" onclick="window.location.href = '/sponsor'"/>
-			</div>
-			<div class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around">
-				<img src="/images/general_pages/sponsors2025.png" class="-right-4 cursor-pointer md:hidden" onclick="window.location.href = '/sponsor'"/>
-				<h1 class="font-display text-xl m-4">Our Sponsors</h1>
-				<p class="font-sans max-w-[60ch]">The RoboCon competition is only possible thanks to the generosity of our sponsors, we receive no other funding. Thank you for your support!</p>
-				<Button variant="outline" class="m-4" onclick="window.location.href = '/sponsor'">Sponsor Us</Button>
-			</div>
-		</div>
-		<NewsReel />
-	</main>
+    <div
+        class="p-8 flex items-center content-around bg-[hsl(var(--alt2-background))]"
+    >
+        <div
+            class="m-8 h-full w-full center flex flex-col items-center content-around"
+        >
+            <h1 class="font-display text-xl m-4">RoboCon 2026 Calendar</h1>
+            <p class="font-sans max-w-[60ch] text-center">
+                View the key dates for RoboCon 2026.
+            </p>
+            <table class="border border-collapse border-gray-400 m-8">
+                <thead>
+                    <tr>
+                        <th class="border border-gray-400 px-4 py-2">Event</th>
+                        <th class="border border-gray-400 px-4 py-2">Date</th>
+                        <th class="border border-gray-400 px-4 py-2">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-400 px-4 py-2 text-center"
+                            >Kickoff</td
+                        >
+                        <td class="border border-gray-400 px-4 py-2 text-center"
+                            >1st November</td
+                        >
+                        <td
+                            class="border border-gray-400 px-4 py-2 max-w-[60ch]"
+                            >The kickoff event, where we announce our new game,
+                            and teams get a chance to complete exercises to
+                            prepare them for the competition.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-400 px-4 py-2 text-center"
+                            >Competition</td
+                        >
+                        <td class="border border-gray-400 px-4 py-2 text-center"
+                            >8-9th April</td
+                        >
+                        <td
+                            class="border border-gray-400 px-4 py-2 max-w-[60ch]"
+                            >Competition days, where teams compete in the arena
+                            to score points and win prizes!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="p-8 flex items-center content-around">
+        <div class="overflow-hidden m-8 w-1/2 hidden md:block">
+            <img
+                src="/images/general_pages/sponsors2025.png"
+                class="-right-4 md:block cursor-pointer"
+                onclick="window.location.href = '/sponsor'"
+            />
+        </div>
+        <div
+            class="m-8 h-full w-full md:w-1/2 center flex flex-col items-center content-around"
+        >
+            <img
+                src="/images/general_pages/sponsors2025.png"
+                class="-right-4 cursor-pointer md:hidden"
+                onclick="window.location.href = '/sponsor'"
+            />
+            <h1 class="font-display text-xl m-4">Our Sponsors</h1>
+            <p class="font-sans max-w-[60ch]">
+                The RoboCon competition is only possible thanks to the
+                generosity of our sponsors, we receive no other funding. Thank
+                you for your support!
+            </p>
+            <Button
+                variant="outline"
+                class="m-4"
+                onclick="window.location.href = '/sponsor'">Sponsor Us</Button
+            >
+        </div>
+    </div>
+    <NewsReel />
 </Layout>
