@@ -13,7 +13,7 @@ Today we welcomed {number} teams from {number} schools at our kickoff event for 
 The day started with a presentation from {number} of our students about this year's competition 'The Hunger Games'.
 <br>
 
-In this game, the arena is split into 4 areas, each owned by a tribute (a RoboCon robot) with its own district. Each tribute needs to collect supply crates and place them in their district or their home. Every so often, the sponsors will send down supply drops from Cornucopia (above the neutral zone), collect them and return to your district. You will score points for any crate you bring back to your district (or to your home for extra points). Multiply your points by stacking your crates.
+In this game, the arena is split into 4 Sectors (Areas), each owned by a Tribute (a RoboCon robot) with its own Sector. Each tribute needs to collect supply crates and place them in their Sector or their home. Every so often, supply drops will be sent down from Cornucopia (above the neutral zone); collect them and return to your Sector. You will score points for any crate you bring back to your Sector, or to your home for extra points. Multiply the points of specific crates by stacking them.
 <br>
 
 After the introduction of our exciting new competition, students then got to complete a set of mini challenges.
