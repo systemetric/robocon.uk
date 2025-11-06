@@ -5,7 +5,7 @@ image:
     alt: picture of a Robocon member helping a team. 
 
 lastUpdated: 2025-11-6T21:00:00.000Z
-description: "we have officially launched RoboCon 2026 with our exciting new competition:\ The Hunger Games! In this years challenge only the most innovative tribute will rise victorious. \nMay the games begin! "
+description: "We have officially launched RoboCon 2026 with our exciting new competition:\ Tributes to the Fallen! In this years challenge only the most innovative tribute will rise victorious. \nMay the games begin! "
 layout: ../../layouts/NewsLayout.astro
 ---
 On the 1<sup>st</sup> November we welcomed 10 teams from 5 schools, 1 club and 1 independent team at our kickoff event for RoboCon 2026.  
