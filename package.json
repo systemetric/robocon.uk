@@ -27,7 +27,7 @@
     "bits-ui": "^0.21.16",
     "clsx": "^2.1.1",
     "embla-carousel-svelte": "^8.5.1",
-    "guage": "^0.0.0",
+    "gauge": "^5.0.2",
     "lucide-svelte": "^0.462.0",
     "mkdirp": "^0.5.1",
     "sharp": "^0.32.6",

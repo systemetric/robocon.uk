@@ -10,7 +10,7 @@ layout: ../../layouts/NewsLayout.astro
 ---
 Today we welcomed 15 teams from 10 schools at our kickoff event for RoboCon 2025.  
 <br>
-The day started with a presentation from three of our students about this year's competition 'Dragon's Lair'. Read the full backstory about the competition on page 2 of the [rulebook](/rulebook-2025.pdf)!  
+The day started with a presentation from three of our students about this year's competition 'Dragon's Lair'. Read the full backstory about the competition on page 2 of the [rulebook](/rulebooks/Rulebook-2025.pdf)!  
 <br>
 In this game, the arena is split into 4 territories, each owned by a dragon (a RoboCon robot) with its' own lair at the back of the territory (a plinth raised 15 cm above the arena floor). Each dragon has its' own Gem but this gem is in another dragon's territory. Each dragon needs to get its' gem back (from another dragon's territory) to their lair. The dragon’s islands are sparse in food, with sheep being their only food source. You will score points for any cube-shaped sheep (the dragon’s food) you bring back to your territory (or to your lair for extra points).  
 <br>
