@@ -1,11 +1,11 @@
 ---
 title: RoboCon 2026 Kick-Off
 image: 
-    url: none
-    alt: none
+    url: /images/news/Kickoff2026/Kickoff2026.png
+    alt: picture of a Robocon member helping a team. 
 
-lastUpdated: 2025-11-2T16:00:00.000Z
-description: Today we launched RoboCon 2026 with our new competition!
+lastUpdated: 2025-11-6T21:00:00.000Z
+description: "we have officially launched RoboCon 2026 with our exciting new competition:\ The Hunger Games! In this years challenge only the most innovative tribute will rise victorious. \nMay the games begin! "
 layout: ../../layouts/NewsLayout.astro
 ---
 On the 1<sup>st</sup> November we welcomed 10 teams from 5 schools, 1 club and 1 independent team at our kickoff event for RoboCon 2026.  
