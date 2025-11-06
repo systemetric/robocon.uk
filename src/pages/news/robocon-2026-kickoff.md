@@ -10,7 +10,7 @@ layout: ../../layouts/NewsLayout.astro
 ---
 On the 1<sup>st</sup> November we welcomed 10 teams from 5 schools, 1 club and 1 independent team at our kickoff event for RoboCon 2026.  
 <br>
-The day started with a presentation from 4 of our students about this year's competition 'The Hunger Games'.
+The day started with a presentation from 4 of our students about this year's competition 'Tributes to the Fallen'.
 <br>
 
 In this game, the arena is split into 4 Sectors (Areas), each owned by a Tribute (a RoboCon robot) with its own Sector. Each tribute needs to collect supply crates and place them in their Sector or their home. Every so often, supply drops will be sent down from Cornucopia (above the neutral zone); collect them and return to your Sector. You will score points for any crate you bring back to your Sector, or to your home for extra points. Multiply the points of specific crates by stacking them.
