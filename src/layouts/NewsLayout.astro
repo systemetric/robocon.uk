@@ -14,7 +14,9 @@ let lastUpdatedStr = updatedDate.toLocaleDateString('en-GB', { year: 'numeric', 
     <Navbar />
   </header>
   <main>
-    <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="h-[400px] w-full object-cover"/>
+    {frontmatter.image && (
+        <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="h-[400px] w-full object-cover"/>
+    )}
     <div class="max-w-[800px] m-auto p-4">
       <h1 class="text-4xl font-display font-bold text-center my-4">{frontmatter.title}</h1>
       <a href="/news">&lt;- All News</a>
