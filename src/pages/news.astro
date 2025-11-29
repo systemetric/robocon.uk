@@ -14,7 +14,7 @@ allPosts.sort((a: any, b: any) => new Date(b.frontmatter.lastUpdated).getTime() 
             {allPosts.map((post: any) => 
             <div class="max-w-[800px] mx-auto">
                 <NewsCard
-                image={post.frontmatter.image.url}
+                image={post.frontmatter.image?.url}
                 title={post.frontmatter.title}
                 description={post.frontmatter.description}
                 lastUpdated={post.frontmatter.lastUpdated}
