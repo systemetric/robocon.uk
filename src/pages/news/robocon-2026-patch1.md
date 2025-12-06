@@ -5,8 +5,6 @@ description: Patch 1 released containing many bug fixes
 layout: ../../layouts/NewsLayout.astro
 ---
 
-we had a thing, we did some stuff, some people reported problems, we hope this fixes it. Please report any bugs...
-
 We ran the RoboCon 2026 kickoff event at the start of November. See our
 [other blog post](https://robocon.uk/news/robocon-2026-kickoff/) to read
 more about it.
@@ -21,9 +19,10 @@ The patch file is available to download
 
 To apply this patch, follow the instructions in
 [our documentation](https://docs.robocon.uk/tools/patching-the-robot/).
-Be aware that this patch is large, and applying it might take some time.**Do
-not restart your brain during the patching process.**If you have any trouble
-applying this patch, please contact us.
+Be aware that this patch is large, and applying it might take some time. Your
+brain will automatically restart when the patching is complete, **do
+not try to restart your brain yourselves during the patching process.**
+If you have any trouble applying this patch, please contact us.
 
 Various issues are included in the patch, some of which are critical to
 operation of the brain and will cause difficult to debug issues for all teams.
