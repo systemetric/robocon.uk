@@ -14,8 +14,15 @@ and reported by teams. We are releasing patch 1 which aims to fix some of these
 issues. Please report any bugs you find to us, so we can release further
 patches for them.
 
-The patch file is available to download
+The patch files are available to download
 [here](https://github.com/systemetric/patches/releases/download/2026_p5/RoboCon2026_p5.py)
+
+This patch is split into two files, most teams should only need the first.
+
+- `RoboCon2026_p5.py`, primary release, all teams should apply this one.
+- `RoboCon2026_p5_docs.py`, supplemental to the former, **only use this
+    one if you don't have on-brain documentation, accessed via the "docs"
+    button on the brain homepage**
 
 To apply this patch, follow the instructions in
 [our documentation](https://docs.robocon.uk/tools/patching-the-robot/).
