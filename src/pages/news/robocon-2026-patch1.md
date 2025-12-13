@@ -15,12 +15,12 @@ issues. Please report any bugs you find to us, so we can release further
 patches for them.
 
 The patch files are available to download
-[here](https://github.com/systemetric/patches/releases/tag/2026_p5)
+[here](https://github.com/systemetric/patches/releases/tag/2026_p6)
 
 This patch is split into two files, most teams should only need the first.
 
-- `RoboCon2026_p5.py`, primary release, all teams should apply this one.
-- `RoboCon2026_p5_docs.py`, supplemental to the former, **only use this
+- `RoboCon2026_p6.py`, primary release, all teams should apply this one.
+- `RoboCon2026_docs.py`, supplemental to the former, **only use this
     one if you don't have on-brain documentation, accessed via the "docs"
     button on the brain homepage**
 
