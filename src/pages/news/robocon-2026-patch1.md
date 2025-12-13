@@ -15,7 +15,7 @@ issues. Please report any bugs you find to us, so we can release further
 patches for them.
 
 The patch files are available to download
-[here](https://github.com/systemetric/patches/releases/download/2026_p5/RoboCon2026_p5.py)
+[here](https://github.com/systemetric/patches/releases/tag/2026_p5)
 
 This patch is split into two files, most teams should only need the first.
 
