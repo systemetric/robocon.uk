@@ -23,6 +23,9 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
+# vscode stuff
+.vscode/
+
 # uncompressed or un-sorted images
 public/images/images_for_compression
 public/images/compressed_images
