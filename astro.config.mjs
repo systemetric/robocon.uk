@@ -9,5 +9,8 @@ import svelte from '@astrojs/svelte';
 export default defineConfig({
   integrations: [tailwind({
     applyBaseStyles:false
-  }), svelte()]
+  }), svelte()],
+  redirects: {
+    "/docs": "https://docs.robocon.uk"
+  }
 });
