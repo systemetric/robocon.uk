@@ -1,8 +1,5 @@
 ---
 title: ROBOCON+
-image:
-  url: images\news\Kickoff2027\WEBANNERV2COMPPNG.png
-  alt: none
 lastUpdated: 2026-11-07T21:29:11.996Z
 description:
 layout: ../../layouts/NewsLayout.astro
